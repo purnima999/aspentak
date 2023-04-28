@@ -1,0 +1,40 @@
+.footer {
+    margin-top: 100%;
+    overflow-x: hidden;
+    padding: 50px;
+    background-color: #23BBB7;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.footer__content{
+    text-align: left;
+    color: #ffffff;
+    line-height: 30px;
+
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+p{
+    font-size: 16px;
+    padding: 10px;
+}
+
+ol li{
+    list-style: none;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 80px;
+}

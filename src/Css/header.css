@@ -1,0 +1,149 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.font-color {
+    color: #B5B5B5;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 41px;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    border-width: 0.1px;
+    border-color: #B5B5B5;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-collapse: collapse;
+    text-decoration: none;
+    outline: none;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: #B5B5B5;
+}
+
+span {
+    padding: 0px 8px;
+}
+
+.site-header {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.site-header-top {
+    background-color: #141D38;
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-items-left {
+    float: left;
+    margin-left: 30px;
+
+}
+
+.header-items-left .slIcons {
+    font-size: 18px;
+}
+
+.header-items-left .slIcons:hover,
+.header-items-right .rlIcons:hover {
+    color:#23BBB7;
+}
+
+.header-items-right {
+    float: right;
+    margin-right: 50px;
+
+}
+
+.header-items-right .rlIcons {
+    font-size: 18px;
+}
+
+/* navbar */
+
+.site-header-bottom {
+    /* position: sticky; */
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 1px solod black;
+}
+
+.site-header-logo {
+    height: 95px;
+    width: auto;
+}
+
+.site-header-bottom-left,
+.site-header-bottom-right {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.main-menu li {
+    border: none;
+}
+
+.main-menu li a {
+    border: none;
+    color: #1a1b1e;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 32px 0px;
+    letter-spacing: 1px;
+
+}
+
+.main-menu li a:hover {
+    color: #23BBB7;
+    padding: 32px 0px;
+    transition: all 0.2s ease-out 0s;
+    text-decoration: underline;
+}
+
+.main-menu .btn {
+    border: none;
+    border-radius: 0px;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #23BBB7;
+    margin-left: 25px;
+
+}
+
+.main-menu .btn:hover {
+    background-color: #7141b1;
+}
+
+.active {
+    text-decoration: underline;
+    color: #23BBB7;
+}
+
+
+/* media queries */
+
+/* 1024 */
+
+@media (max-width:1024px) {}
