@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="home-page-section-1">
           <Carousel>
             <Carousel.Item interval={100000}>
-              <img className="d-block w-100 img" src={two} alt="first slide" />
+              <img className="d-block w-100" id="img" src={two} alt="first slide" />
               <div className="carousel-content">
                 <h3 className="content-slide-in">
                   // Only High-Quality Services
@@ -35,7 +35,7 @@ const HomePage = () => {
               </div>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <img className="d-block w-100" src={images} alt="Second slide" />
+              <img className="d-block w-100" id="img" src={images} alt="Second slide" />
               <div className="carousel-content">
                 <h3>// Only High-Quality Services</h3>
                 <h1>
@@ -414,7 +414,53 @@ const HomePage = () => {
 
         {/* ==================================================section-8-start =========================== */}
         <div className="home-page-section-8">
-          
+          <div className="section-8-inner-box">
+            <div className="section-8-inner-box-text">
+              <h3>// OUR CLIENTS</h3>
+              <h1>
+                We are Trusted <br />
+                15+ Countries Worldwide
+              </h1>
+            </div>
+            <Row className="section-8-cards">
+              <Col>
+                <Card id="card">
+                  <Card.Img id="img" variant="top" src={two} />
+                  <div className="cardTittle">
+                    <h1>Moonkle LTD,</h1>
+                    <h5>Client of Company</h5>
+                  </div>
+                  <Card.Body style={{ padding: "0px" }}>
+                    <Card.Text id="text">
+                      "Very well thought out and articulate communication. Clear
+                      milestones, deadlines and fast work. Patience. Infinite
+                      patience. No shourtcuts, Even if the client is being
+                      careless. The best part...always solving problems with
+                      great orginal Ideas!."
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card id="card">
+                  <Card.Img id="img" variant="top" src={two} />
+                  <div className="cardTittle">
+                    <h1>Moonkle LTD,</h1>
+                    <h5>Client of Company</h5>
+                  </div>
+                  <Card.Body style={{ padding: "0px" }}>
+                    <Card.Text id="text">
+                      "Very well thought out and articulate communication. Clear
+                      milestones, deadlines and fast work. Patience. Infinite
+                      patience. No shourtcuts, Even if the client is being
+                      careless. The best part...always solving problems with
+                      great orginal Ideas!."
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </div>
         </div>
         {/* ==================================================section-8-end =========================== */}
       </div>

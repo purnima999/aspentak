@@ -34,7 +34,7 @@ function App() {
           )}
         </Routes> */}
       {/* </BrowserRouter> */}
-      <Layout > </Layout>
+      <Layout ></Layout>
     </React.Fragment>
   );
 }

@@ -176,7 +176,7 @@
 }
 
 
-#card {
+.section-4-cards #card {
     position: relative;
     min-width: 250px;
     width: 280px;
@@ -187,17 +187,17 @@
     border-radius: 0px;
     transition: 0.5s;
     border: 1px solid #8E88B8;
-    background-color: #221F3C;
+    background-color: #262051;
     padding: 20px;
     color: white;
 }
 
-#card:hover {
+.section-4-cards #card:hover {
     background-color: #F8F8F8;
     color: black;
 }
 
-#card h2 {
+.section-4-cards #card h2 {
     position: absolute;
     font-size: 9rem;
     font-weight: 900;
@@ -208,14 +208,14 @@
 
 }
 
-#card #card-tittle {
+.section-4-cards #card #card-tittle {
     font-size: 25px;
     font-weight: 600;
     text-align: left;
     line-height: 30px;
 }
 
-#card #card-text {
+.section-4-cards #card #card-text {
     font-size: 16px;
     font-weight: 300;
     text-align: left;
@@ -223,7 +223,7 @@
     letter-spacing: 0.5px;
 }
 
-#card #card-link-1 {
+.section-4-cards #card #card-link-1 {
     color: #23BBB7;
     font-size: 16px;
     font-weight: 600;
@@ -472,4 +472,87 @@
 .section-7-col .fa {
     font-size: 40px;
     padding: 10px;
+}
+
+
+
+
+/* section-8 */
+
+.home-page-section-8 {
+    background-color: #F8F8F8;
+    background-image: url("../Images//map.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.section-8-inner-box {
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.section-8-inner-box-text {
+    padding-top: 90px;
+}
+
+.section-8-inner-box-text h3 {
+    color: #7141b1;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-8-inner-box-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+
+.section-8-cards {
+    padding: 50px 0px;
+}
+
+.section-8-cards #card {
+    float: right;
+    padding: 10px 30px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(214, 208, 208)
+}
+
+.sction-8-cards #card2 {
+    float: left;
+
+}
+
+.section-8-cards #img {
+    /* margin: 40px ; */
+    width: 90px;
+    height: 90px;
+    border-radius: 70%;
+}
+
+.section-8-cards .cardTittle {
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.section-8-cards .cardTittle h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+.section-8-cards #text {
+    font-size: 16px;
+    color: #6D6D6D;
+    /* line-height: 50px; */
+    letter-spacing: 1px;
+    text-align: left;
 }
