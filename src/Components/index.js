@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Pages/header';
 import Footer from './Pages/footer';
-// import HomePage from './Pages/homePage';
-import AboutPage from './Pages/aboutPage';
+import HomePage from './Pages/homePage';
+// import AboutPage from './Pages/aboutPage';
 
 const LayoutContent = (props) => {
     return (
