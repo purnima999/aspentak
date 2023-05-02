@@ -1,0 +1,45 @@
+.about-page-section-1 {
+    background-image: url("../Images/bg-about.jpg");
+    padding: 10% 3%;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+.about-page-section-1 h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.about-page-section-2 {
+    padding: 100px 40px;
+}
+
+.about-page-section-2 .section-2-left-panel {
+    padding-left: 10px;
+}
+
+.about-page-section-2 .section-2-left-panel h3 {
+    color: #7141b1;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 0px;
+}
+
+.section-2-left-panel h1 {
+    font-weight: 900;
+    line-height: 50px;
+    padding-left: 0px;
+}
+
+.section-2-left-panel p {
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+    padding-left: 0px;
+    line-height: 35px;
+    color: #6d6d6d;
+}
+
+.section-2-right-panel #img {
+    
+}

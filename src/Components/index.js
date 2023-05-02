@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Pages/header';
 import Footer from './Pages/footer';
-import HomePage from './Pages/homePage';
+// import HomePage from './Pages/homePage';
+import AboutPage from './Pages/aboutPage';
 
 const LayoutContent = (props) => {
     return (
@@ -12,6 +13,7 @@ const LayoutContent = (props) => {
                     <div className='content'>
                         {/* {props.children} */}
                         <HomePage/>
+                        {/* <AboutPage/> */}
                     </div>
                 </div>
                 <Footer />

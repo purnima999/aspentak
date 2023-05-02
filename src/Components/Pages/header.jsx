@@ -3,8 +3,16 @@ import "../../Css/header.css";
 import { Row, Col, Button } from "react-bootstrap";
 // import '../../Css/main.css';
 import logo from "../../Images/logo1.png";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  let navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate("/aboutPage");
+  };
+
   return (
     <div className="site-header">
       <div className="site-header-top">
@@ -73,7 +81,7 @@ const Header = () => {
                   <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <a href="aboutUs">About Us</a>
                 </li>
                 <li>
                   <a href="#">Services</a>
