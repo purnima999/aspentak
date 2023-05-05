@@ -1,7 +1,6 @@
 import React from "react";
 import "../../Css/header.css";
 import { Row, Col, Button } from "react-bootstrap";
-// import '../../Css/main.css';
 import logo from "../../Images/logo1.png";
 import { useNavigate } from "react-router-dom";
 
