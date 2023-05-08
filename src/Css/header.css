@@ -31,7 +31,7 @@ ul li {
     outline: none;
 }
 
-ul li a:hover{
+ul li a:hover {
     text-decoration: none;
     color: #B5B5B5;
 }
@@ -43,6 +43,7 @@ span {
 .site-header {
     width: 100%;
     overflow-x: hidden;
+    margin-bottom: 40px;
 }
 
 .site-header-top {
@@ -65,7 +66,7 @@ span {
 
 .header-items-left .slIcons:hover,
 .header-items-right .rlIcons:hover {
-    color:#23BBB7;
+    color: #23BBB7;
 }
 
 .header-items-right {
@@ -81,11 +82,15 @@ span {
 /* navbar */
 
 .site-header-bottom {
-    /* position: sticky; */
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     width: 100%;
-    border-bottom: 1px solod black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 100;
+    /* transition: all 0.3s ease; */
 }
 
 .site-header-logo {
@@ -93,10 +98,13 @@ span {
     width: auto;
 }
 
-.site-header-bottom-left,
-.site-header-bottom-right {
-    padding: 10px;
-    margin-left: 100px;
+.site-header-bottom-left {
+    padding: 0px;
+    margin-left: 40px;
+}
+
+.main-menu {
+    padding: 0px;
 }
 
 .main-menu li {
@@ -110,7 +118,7 @@ span {
     line-height: 70px;
     font-size: 16px;
     font-weight: bold;
-    padding: 32px 0px;
+    padding: 30px 0px;
     letter-spacing: 1px;
 
 }
@@ -118,7 +126,7 @@ span {
 .main-menu li a:hover {
     color: #23BBB7;
     padding: 32px 0px;
-    transition: all 0.2s ease-out 0s;
+    /* transition: all 0.2s ease-out 0s; */
     text-decoration: underline;
 }
 
@@ -141,9 +149,111 @@ span {
     color: #23BBB7;
 }
 
+.main-menu-side-bar {
+    display: none;
+}
+
+.cancel-btn {
+    display: none;
+}
 
 /* media queries */
 
 /* 1024 */
 
-@media (max-width:1024px) {}
+@media (max-width:1024px) {
+    .site-header-top {
+        display: none;
+    }
+
+    .site-header-bottom {
+        padding: 10px;
+    }
+
+    .site-header-logo {
+        width: 70px;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .main-menu-side-bar {
+        display: block;
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .main-menu-side-bar:hover {
+        color: #23BBB7;
+    }
+
+    .main-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        right: 0%;
+        top: 0px;
+        text-align: center;
+        background: white;
+        /* transition: all 0.3s ease; */
+        padding: 0px;
+    }
+
+    .main-menu.hide {
+        display: none;
+    }
+
+    .main-menu.show {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        right: 0%;
+        top: 0px;
+        text-align: center;
+        background: white;
+        /* transition: all 0.3s ease; */
+        padding: 0px;
+    }
+
+
+    .main-menu .cancel-btn {
+        padding: 30px 40px;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    .main-menu .cancel-btn:hover {
+        color: #23BBB7;
+        cursor: pointer;
+    }
+
+    .main-menu li {
+        display: block;
+        text-align: left;
+
+    }
+
+    .main-menu .btn {
+        display: none;
+    }
+
+    .cancel-btn {
+        display: block;
+    }
+
+}
+
+@media (max-width: 991px){
+    .main-menu-side-bar {
+        margin-right: 60px;
+        float: right;
+    }
+
+    
+}

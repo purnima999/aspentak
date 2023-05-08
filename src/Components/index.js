@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import Header from './Pages/header';
 import Footer from './Pages/footer';
-// import HomePage from './Pages/homePage';
-import AboutPage from './Pages/aboutPage';
+import HomePage from './Pages/homePage';
+// import AboutPage from './Pages/aboutPage';
+// import ServicesPage from './Pages/servicesPage';
+// import ContactPage from './Pages/contactPage';
 
 const LayoutContent = (props) => {
     return (
         <React.Fragment>
             <div id="wrapper">
-                <Header />
+                {/* <Header /> */}
                 <div className='content-page'>
                     <div className='content'>
                         {/* {props.children} */}
-                        {/* <HomePage/> */}
-                        <AboutPage/>
+                        <HomePage/>
+                        {/* <AboutPsage/> */}
+                        {/* <ServicesPage /> */}
+                        {/* <ContactPage/> */}
                     </div>
                 </div>
                 <Footer />

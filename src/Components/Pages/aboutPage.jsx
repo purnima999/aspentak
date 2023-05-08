@@ -77,16 +77,16 @@ const AboutPage = () => {
                 <h1>About Aspen Tek Consultants</h1>
                 <Row className="about-section-3-grid" id="aboutgrid">
                   <Col className="about-section-3-col">
-                    <i class="fa fa-television" id="ic" aria-hidden="true"></i>
+                    <i className="fa fa-television" id="ic" aria-hidden="true"></i>
                   </Col>
                   <Col className="about-section-3-col">
-                    <i class="fa fa-android" aria-hidden="true"></i>
+                    <i className="fa fa-android" aria-hidden="true"></i>
                   </Col>
                   <Col className="about-section-3-col">
-                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <i className="fa fa-apple" aria-hidden="true"></i>
                   </Col>
                   <Col className="about-section-3-col">
-                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <i className="fa fa-globe" aria-hidden="true"></i>
                   </Col>
                 </Row>
                 <p>
@@ -96,7 +96,7 @@ const AboutPage = () => {
                   each of our partnerships.
                 </p>
                 <p className="about-section-learn">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                   LEARN MORE
                 </p>
               </div>

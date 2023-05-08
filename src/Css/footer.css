@@ -6,15 +6,15 @@
     font-family: "Montserrat", Sans-serif;
 }
 
-.footer__content{
+.footer__content {
     text-align: left;
     color: #ffffff;
     line-height: 30px;
 
 }
 
-h3 {
-    font-size: 20px;
+h4 {
+    font-size: 16px;
     font-weight: 600;
     color: #ffffff;
     text-align: left;
@@ -22,14 +22,14 @@ h3 {
     padding-left: 30px;
 }
 
-p{
-    font-size: 16px;
+p {
+    font-size: 15px;
     padding: 10px;
 }
 
-ol li{
+ol li {
     list-style: none;
-    font-size: 18px;
+    font-size: 15px;
     padding: 7px;
 }
 
@@ -37,4 +37,21 @@ ol li{
     text-align: center;
     color: #ffffff;
     margin-top: 80px;
+}
+
+
+/* 768px */
+
+@media (max-width:768px) {
+    .footer {
+        padding: 50px 10px;
+    }
+
+    h4 {
+        padding-left: 10px;
+    }
+
+    ol {
+        padding-left: 10px;
+    }
 }

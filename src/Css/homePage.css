@@ -6,6 +6,28 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* back to top button */
+
+#backtotopbtn {
+    background: #fff;
+    border: 0 none;
+    color: #43baff;
+    border-radius: 2px;
+    width: 42px;
+    height: 45px;
+    cursor: pointer;
+    line-height: 45px;
+    outline: medium none;
+    position: fixed;
+    right: 40px;
+    top: 85%;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;
+    transition: opacity 0.2s ease-out 0s;
+    box-shadow: 6px 6px 13px 0px rgba(42, 67, 113, 0.2);
+}
+
 .carousel-content {
     position: absolute;
     top: 0%;
@@ -30,21 +52,21 @@
 }
 
 .carousel-content h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
 .carousel-content h3 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
 .carousel-content p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -62,6 +84,107 @@
 
 .carousel-content .btn:hover {
     background-color: #7141b1;
+}
+
+@media (max-width:1024px) {
+    .carousel-content h1 {
+        font-size: 57px;
+    }
+
+    .carousel-content h3 {
+        font-size: 18px;
+    }
+
+    .carousel-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .home-page-section-1{
+        overflow: hidden;
+    }
+    .carousel-content h1 {
+        font-size: 40px;
+    }
+
+    .carousel-content h3 {
+        font-size: 15px;
+    }
+
+    .carousel-content p {
+        font-size: 10px;
+    }
+
+    .carousel-content .btn {
+        padding: 18px 30px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:776px) {
+    .carousel-content h1 {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .carousel-content h3 {
+        font-size: 12px;
+    }
+
+    .carousel-content p {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    .carousel-content .btn {
+        padding: 13px 20px;
+        margin-top: 0px;
+        font-size: 18px;
+    }
+
+    .home-page-section-1 img{
+        width: 50%;
+    }
+}
+
+@media(max-width:526px) {
+    .carousel-content h1 {
+        font-size: 18px;
+    }
+
+    .carousel-content .btn {
+        padding: 10px 15px;
+        margin-top: 0px;
+        font-size: 10px;
+
+    }
+
+    .carousel-content h3{
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width:425px){
+    .carousel-content h3{
+        padding-top: 20px;
+        font-size: 6px;
+    }
+    .carousel-content h1 {
+        font-size: 10px;
+    }
+
+    .carousel-content p{
+        font-size: 5px;
+    }
+
+    .carousel-content .btn {
+        padding: 10px 15px;
+        margin-top: 0px;
+        font-size: 10px;
+
+    }
 }
 
 
@@ -553,4 +676,3 @@
     letter-spacing: 1px;
     text-align: left;
 }
-

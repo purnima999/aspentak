@@ -9,20 +9,40 @@ import "../../Css/homePage.css";
 import team from "../../Images/team.png";
 
 const HomePage = () => {
+
+  // back to top button
+  const backToTopHandler = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
+      <div>
+        <button
+          id="backtotopbtn"
+          title="Go to top"
+          onClick={() => backToTopHandler()}
+        >
+          <i className="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
       <div className="home-page">
         {/* ================================================section-1-start===================================== */}
         <div className="home-page-section-1">
           <Carousel>
             <Carousel.Item interval={100000}>
-              <img className="d-block w-100" id="img" src={two} alt="first slide" />
+              <img
+                className="d-block w-100"
+                id="img"
+                src={two}
+                alt="first slide"
+              />
               <div className="carousel-content">
                 <h3 className="content-slide-in">
                   // Only High-Quality Services
                 </h3>
                 <h1>
-                  IT CONSILTING
+                  IT CONSULTING
                   <br />
                   SERVICES & SOLUTIONS
                 </h1>
@@ -35,7 +55,12 @@ const HomePage = () => {
               </div>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <img className="d-block w-100" id="img" src={images} alt="Second slide" />
+              <img
+                className="d-block w-100"
+                id="img"
+                src={images}
+                alt="Second slide"
+              />
               <div className="carousel-content">
                 <h3>// Only High-Quality Services</h3>
                 <h1>
@@ -72,7 +97,7 @@ const HomePage = () => {
         </div>
 
         {/* =======================================section-2-start============================ */}
-        <div className="home-page-section-2">
+        {/* <div className="home-page-section-2">
           <Carousel>
             <Carousel.Item fade interval={5000}>
               <div className="section-2-grid">
@@ -101,7 +126,7 @@ const HomePage = () => {
               </div>
             </Carousel.Item>
           </Carousel>
-        </div>
+        </div> */}
         {/* ==================================================section-2-end=================================== */}
 
         {/* ================================================section-3-start================================= */}
@@ -145,7 +170,7 @@ const HomePage = () => {
               <div className="section-3-right-panel">
                 <img src={two} />
                 <p>
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>LEARN
+                  <i className="fa fa-long-arrow-right" aria-hidden="true"></i>LEARN
                   MORE ABOUT US
                 </p>
               </div>
@@ -173,7 +198,7 @@ const HomePage = () => {
                     We communicate directly with your team to find candidates.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     LEARN MORE
                   </Card.Link>
                   <Card.Link href="#">Another Link</Card.Link>
@@ -192,7 +217,7 @@ const HomePage = () => {
                     and needs.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     LEARN MORE
                   </Card.Link>
                   <Card.Link href="#">Another Link</Card.Link>
@@ -210,7 +235,7 @@ const HomePage = () => {
                     Our candidate pool comprises fully qualified experts.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     LEARN MORE
                   </Card.Link>
                   <Card.Link href="#">Another Link</Card.Link>
@@ -227,7 +252,7 @@ const HomePage = () => {
                     candidates.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     LEARN MORE
                   </Card.Link>
                   <Card.Link href="#">Another Link</Card.Link>
@@ -278,7 +303,7 @@ const HomePage = () => {
           <Row className="section-5-grid">
             <Col id="section-5-col" lg={4}>
               <div className="section-5-col-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
                 <h3>IT Consulting</h3>
@@ -291,7 +316,7 @@ const HomePage = () => {
             </Col>
             <Col id="section-5-col" lg={4}>
               <div className="section-5-col-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
                 <h3>Initial Assessment</h3>
@@ -304,7 +329,7 @@ const HomePage = () => {
             </Col>
             <Col id="section-5-col" lg={4}>
               <div className="section-5-col-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
                 <h3>IT Consulting</h3>
@@ -317,7 +342,7 @@ const HomePage = () => {
             </Col>
             <Col id="section-5-col" lg={4}>
               <div className="section-5-col-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
                 <h3>IT Consulting</h3>
@@ -330,7 +355,7 @@ const HomePage = () => {
             </Col>
             <Col id="section-5-col" lg={4}>
               <div className="section-5-col-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
                 <h3>IT Consulting</h3>
@@ -343,7 +368,7 @@ const HomePage = () => {
             </Col>
             <Col id="section-5-col" lg={4}>
               <div className="section-5-col-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
                 <h3>IT Consulting</h3>
@@ -383,27 +408,27 @@ const HomePage = () => {
               </h1>
               <Row className="section-7-grid">
                 <Col className="section-7-col">
-                  <i class="fa fa-television" aria-hidden="true"></i>
+                  <i className="fa fa-television" aria-hidden="true"></i>
                   <h3>WEB</h3>
                 </Col>
                 <Col className="section-7-col">
-                  <i class="fa fa-android" aria-hidden="true"></i>
+                  <i className="fa fa-android" aria-hidden="true"></i>
                   <h3>ANDRIOD</h3>
                 </Col>
                 <Col className="section-7-col">
-                  <i class="fa fa-apple" aria-hidden="true"></i>
+                  <i clclassNameass="fa fa-apple" aria-hidden="true"></i>
                   <h3>IOS</h3>
                 </Col>
                 <Col className="section-7-col">
-                  <i class="fa fa-globe" aria-hidden="true"></i>
+                  <i className="fa fa-globe" aria-hidden="true"></i>
                   <h3>IOT</h3>
                 </Col>
                 <Col className="section-7-col">
-                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <i className="fa fa-cog" aria-hidden="true"></i>
                   <h3>WEARALABLES</h3>
                 </Col>
                 <Col className="section-7-col">
-                  <i class="fa fa-cloud" aria-hidden="true"></i>
+                  <i className="fa fa-cloud" aria-hidden="true"></i>
                   <h3>CLOUD</h3>
                 </Col>
               </Row>

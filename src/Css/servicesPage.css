@@ -1,0 +1,98 @@
+.service-page {}
+
+.service-page-section-1 {
+    background-image: url("../Images/bg-about.jpg");
+    padding: 10% 3%;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+
+.service-page-section-1 h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.service-page-section-3 {
+    background-color: #F8F8F8;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    padding: 125px 80px 80px 80px
+}
+
+.service-page-section-3 h3,
+.service-page-section-3 h1,
+.service-page-section-3 p {
+    text-align: left;
+    padding: 5px;
+    line-height: 35px;
+}
+
+.service-page-section-3 h3 {
+    color: #7141b1;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.service-page-section-3 h1 {
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.service-page-section-3 p {
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #030303;
+
+}
+
+.service-section-4-right-panel {
+    padding-left: 50px;
+}
+
+.service-section-4-right-panel img {
+    height: auto;
+    width: 100%;
+}
+
+.service-page-section-4 {
+    background-image: url('../Images/bg-cta-home2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 0px 130px 0px;
+    text-align: center;
+}
+
+.service-page-section-4 h3 {
+    color: #FFFFFF;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: center;
+
+}
+
+.service-page-section-4 h1 {
+    color: #FFFFFF;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 80px;
+}
+
+.service-page-section-4 .btn{
+    border: none;
+    margin-top: 30px;
+    border-radius: 0px;
+    padding: 22px 40px;
+    color: #fff;
+    background-color: #23BBB7;
+    font-weight: 600;
+}
+
+.service-page-section-4 .btn:hover{
+    background-color: #7141b1;
+}

@@ -5,11 +5,14 @@ import logo from "../../Images/logo1.png";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  let navigate = useNavigate();
+  const openMenuHandler = () => {
+    document.querySelector(".main-menu").classList.add("show");
+    document.querySelector(".main-menu").classList.remove("hide");
+  };
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate("/aboutPage");
+  const closeMenuHandler = () => {
+    document.querySelector(".main-menu").classList.remove("show");
+    document.querySelector(".main-menu").classList.add("hide");
   };
 
   return (
@@ -21,22 +24,31 @@ const Header = () => {
               <ul className="header-items-left">
                 <li>
                   <a href="#" className="font-color">
-                    <i class="fa fa-twitter slIcons" aria-hidden="true"></i>
+                    <i className="fa fa-twitter slIcons" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="font-color">
-                    <i class="fa fa-facebook slIcons" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-facebook slIcons"
+                      aria-hidden="true"
+                    ></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="font-color">
-                    <i class="fa fa-linkedin slIcons" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-linkedin slIcons"
+                      aria-hidden="true"
+                    ></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="font-color">
-                    <i class="fa fa-instagram slIcons" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-instagram slIcons"
+                      aria-hidden="true"
+                    ></i>
                   </a>
                 </li>
               </ul>
@@ -48,7 +60,7 @@ const Header = () => {
                 <li>
                   <a href="#" className="font-color">
                     <span>
-                      <i class="fa fa-phone rlIcons" aria-hidden="true"></i>
+                      <i className="fa fa-phone rlIcons" aria-hidden="true"></i>
                     </span>
                     +91 1234567890
                   </a>
@@ -56,7 +68,10 @@ const Header = () => {
                 <li>
                   <a href="#" className="font-color">
                     <span>
-                      <i class="fa fa-envelope rlIcons" aria-hidden="true"></i>
+                      <i
+                        className="fa fa-envelope rlIcons"
+                        aria-hidden="true"
+                      ></i>
                     </span>
                     info@domain
                   </a>
@@ -68,14 +83,21 @@ const Header = () => {
       </div>
       <div className="site-header-bottom">
         <Row>
-          <Col lg={4}>
+          <Col lg={4} md={4} sm={4} xs={3}>
             <div className="site-header-bottom-left">
               <img className="site-header-logo" src={logo} />
             </div>
           </Col>
-          <Col>
+          <Col lg={8} md={8} sm={6} xs={8}>
             <div className="site-header-bottom-right">
               <ul className="main-menu">
+                <li className="cancel-btn">
+                  <i
+                    className="fa fa-long-arrow-right"
+                    aria-hidden="true"
+                    onClick={() => closeMenuHandler()}
+                  ></i>
+                </li>
                 <li>
                   <a href="#">Home</a>
                 </li>
@@ -88,10 +110,17 @@ const Header = () => {
                 <li>
                   <a href="#">Contact</a>
                 </li>
-                <li>
-                  <Button className="btn">CAREER</Button>
-                </li>
+                <li><Button className="btn">CAREER</Button></li>
               </ul>
+            </div>
+            <div className="main-menu-side-bar">
+              <div className="icon menu-btn">
+                <i
+                  className="fa fa-bars"
+                  aria-hidden="true"
+                  onClick={() => openMenuHandler()}
+                ></i>
+              </div>
             </div>
           </Col>
         </Row>
