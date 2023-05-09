@@ -1,0 +1,11 @@
+.applyForm {
+    padding: 50px 20px;
+    width: 800px;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    position: relative;
+}
+
