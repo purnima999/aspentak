@@ -102,9 +102,10 @@
 
 @media (max-width:991px) {
 
-    .home-page-section-1{
+    .home-page-section-1 {
         overflow: hidden;
     }
+
     .carousel-content h1 {
         font-size: 40px;
     }
@@ -144,7 +145,7 @@
         font-size: 18px;
     }
 
-    .home-page-section-1 img{
+    .home-page-section-1 img {
         width: 50%;
     }
 }
@@ -161,21 +162,22 @@
 
     }
 
-    .carousel-content h3{
+    .carousel-content h3 {
         margin-bottom: 0px;
     }
 }
 
-@media(max-width:425px){
-    .carousel-content h3{
+@media(max-width:425px) {
+    .carousel-content h3 {
         padding-top: 20px;
         font-size: 6px;
     }
+
     .carousel-content h1 {
         font-size: 10px;
     }
 
-    .carousel-content p{
+    .carousel-content p {
         font-size: 5px;
     }
 
@@ -266,6 +268,8 @@
     font-weight: 500;
 }
 
+
+
 /* section-4 */
 .home-page-section-4 {
     background-color: #221F3C;
@@ -284,11 +288,12 @@
 
 .home-page-section-4 h1 {
     font-weight: 900;
+    font-size: 30px;
 }
 
 .home-page-section-4 .section-4-cards,
 .home-page-section-4 .section-4-images {
-    padding: 30px 60px;
+    padding: 20px 20px;
 }
 
 .home-page-section-4 .section-4-images-col {
@@ -298,9 +303,8 @@
 
 .section-4-cards #card {
     position: relative;
-    min-width: 250px;
-    width: 280px;
-    height: 380px;
+    /* width: 200px; */
+    height: 400px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
         inset -5px -5px 15px rgba(255, 255, 255, 0.1),
         5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
@@ -310,6 +314,7 @@
     background-color: #262051;
     padding: 20px;
     color: white;
+    margin: 20px 0px;
 }
 
 .section-4-cards #card:hover {
@@ -330,18 +335,19 @@
 
 .section-4-cards #card #card-tittle {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 800;
     text-align: left;
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .section-4-cards #card #card-text {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     text-align: left;
     line-height: 30px;
     letter-spacing: 0.5px;
 }
+
 
 .section-4-cards #card #card-link-1 {
     color: #23BBB7;
@@ -400,6 +406,7 @@
     color: #fff;
 }
 
+
 /* section-5 */
 
 .home-page-section-5 {
@@ -414,7 +421,7 @@
     padding-left: 0px;
 }
 
-.home-page-section-5 p {
+.home-page-section-5 h1 {
     font-size: 35px;
     font-weight: 900;
     text-align: left;
@@ -533,6 +540,10 @@
 
 /* section-7 */
 
+.home-page-section-7{
+    margin-bottom: 90px;
+}
+
 .home-page-section-7 img {
     width: 100%;
     height: 500px;
@@ -540,17 +551,21 @@
 }
 
 .section-7-content {
+    /* background-image: url('../Images/two.jpg'); */
     position: absolute;
     top: 0%;
     color: white;
     width: 100%;
     padding: 0px 20px;
     background: rgba(0, 0, 0, 0.5);
-    height: 500px;
+    z-index: 1;
     padding: 60px;
     left: 0%;
     overflow: hidden;
     text-align: center;
+    background-repeat: no-repeat;
+    object-position: 25% 25%;
+    background-size: cover;
 }
 
 #section-7-outer-col {
@@ -580,7 +595,7 @@
 
 .section-7-col {
     border: 1px solid #7A7A7A;
-    margin: 20px;
+    /* margin: 20px; */
     padding: 30px;
 }
 
@@ -676,3 +691,71 @@
     letter-spacing: 1px;
     text-align: left;
 }
+
+@media (max-width:991px) {
+    .section-3-right-panel {
+        display: none;
+    }
+
+    .section-4-cards #card {
+        height: 270px;
+    }
+
+    .section-4-cards #card #card-link-1 {
+        float: right;
+    }
+}
+
+@media (max-width:767px) {
+    .home-page-section-3 {
+        padding: 100px 20px;
+    }
+
+    .home-page-section-3 p {
+        font-size: 15px;
+    }
+
+    .home-page-section-7 h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .home-page-section-7 img {
+        width: 100%;
+        height: 1255px;
+        object-fit: cover;
+    }
+
+    .section-7-content{
+        padding: 0px;
+    }
+}
+
+@media(max-width:425px) {
+    .section-4-cards #card {
+        padding: 0px;
+    }
+
+    .section-4-cards #card #card-tittle {
+        font-size: 20px;
+    }
+
+    .section-5-col-content h3 {
+        font-size: 18px;
+    }
+
+    .home-page-section-5 h1 {
+        font-size: 25px;
+    }
+
+    .section-5-col-content p {
+        font-size: 15px;
+    }
+
+    .home-page-section-5 .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width:1024px) {}

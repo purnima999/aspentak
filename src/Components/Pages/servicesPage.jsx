@@ -4,8 +4,22 @@ import { Button, Row, Col, Card } from "react-bootstrap";
 import two from "../../Images/two.jpg";
 
 const ServicesPage = () => {
+  // back to top button
+  const backToTopHandler = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
+     <div>
+        <button
+          id="backtotopbtn"
+          title="Go to top"
+          onClick={() => backToTopHandler()}
+        >
+          <i className="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
       <div className="service-page">
         <div className="service-page-section-1">
           <h1>Services</h1>
@@ -16,12 +30,12 @@ const ServicesPage = () => {
           <div className="home-page-section-5">
             <h3>// OUR SERVICE</h3>
             <Row>
-              <Col>
-                <p>
+              <Col lg={6} sm={12}>
+                <h1>
                   We Offer a Wide <br /> Variety of IT Services
-                </p>
+                </h1>
               </Col>
-              <Col>
+              <Col lg={6} sm={12}>
                 <Button className="btn">ALL SERVICES</Button>
               </Col>
             </Row>
@@ -44,11 +58,24 @@ const ServicesPage = () => {
                   <i className="fa fa-cogs" aria-hidden="true"></i>
                 </div>
                 <div className="section-5-col-content">
+                  <h3>Ability to Integrate</h3>
+                  <p>
+                    We are proud to offer candidates that are quick to respond
+                    and integrate into your project, no matter what stage you
+                    are currently completing.
+                  </p>
+                </div>
+              </Col>
+              <Col id="section-5-col" lg={4}>
+                <div className="section-5-col-icon">
+                  <i className="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <div className="section-5-col-content">
                   <h3>Initial Assessment</h3>
                   <p>
-                    We are a full-service IT staffing and recruitment consulting
-                    firm prepared to provide solutions for a wide variety of
-                    industries and projects.
+                    We will familiarize ourselves with your unique project and
+                    open a clean, clear dialogue with your team to ensure all
+                    information is understood correctly.
                   </p>
                 </div>
               </Col>
@@ -57,11 +84,11 @@ const ServicesPage = () => {
                   <i className="fa fa-cogs" aria-hidden="true"></i>
                 </div>
                 <div className="section-5-col-content">
-                  <h3>IT Consulting</h3>
+                  <h3>Growth</h3>
                   <p>
-                    We are a full-service IT staffing and recruitment consulting
-                    firm prepared to provide solutions for a wide variety of
-                    industries and projects.
+                    Each candidate we offer for your IT staff needs will clearly
+                    understand the scope and scale of your project. They will
+                    agree to their job parameters.
                   </p>
                 </div>
               </Col>
@@ -70,11 +97,11 @@ const ServicesPage = () => {
                   <i className="fa fa-cogs" aria-hidden="true"></i>
                 </div>
                 <div className="section-5-col-content">
-                  <h3>IT Consulting</h3>
+                  <h3>Discovery</h3>
                   <p>
-                    We are a full-service IT staffing and recruitment consulting
-                    firm prepared to provide solutions for a wide variety of
-                    industries and projects.
+                    Our IT consultant team will compile, review, and suggest
+                    recommendations based on the availability of our growing
+                    candidate pool.
                   </p>
                 </div>
               </Col>
@@ -83,24 +110,10 @@ const ServicesPage = () => {
                   <i className="fa fa-cogs" aria-hidden="true"></i>
                 </div>
                 <div className="section-5-col-content">
-                  <h3>IT Consulting</h3>
+                  <h3>All Levels</h3>
                   <p>
-                    We are a full-service IT staffing and recruitment consulting
-                    firm prepared to provide solutions for a wide variety of
-                    industries and projects.
-                  </p>
-                </div>
-              </Col>
-              <Col id="section-5-col" lg={4}>
-                <div className="section-5-col-icon">
-                  <i className="fa fa-cogs" aria-hidden="true"></i>
-                </div>
-                <div className="section-5-col-content">
-                  <h3>IT Consulting</h3>
-                  <p>
-                    We are a full-service IT staffing and recruitment consulting
-                    firm prepared to provide solutions for a wide variety of
-                    industries and projects.
+                    We are proud to offer qualified candidates for every level
+                    and management stage of your IT organization.
                   </p>
                 </div>
               </Col>
@@ -112,7 +125,7 @@ const ServicesPage = () => {
         {/* ================================= service-page-section-3-start ==========================  */}
         <div className="service-page-section-3">
           <Row>
-            <Col>
+            <Col lg={6} md={12}>
               <h1>Helping Match Your Business with Great Talent</h1>
               <p>
                 The ability to attract and retain professional talent is
@@ -131,7 +144,7 @@ const ServicesPage = () => {
                 consulting journey. Let us help you!
               </p>
             </Col>
-            <Col>
+            <Col lg={6} md={0}>
               <div className="service-section-4-right-panel">
                 <img src={two} />
               </div>
@@ -149,7 +162,7 @@ const ServicesPage = () => {
         {/* ================================= service-page-section-4-end ========================= */}
 
         {/* ================================= service-page-section-5-start ========================= */}
-        <div className="home-page-section-8">
+        {/* <div className="home-page-section-8">
           <div className="section-8-inner-box">
             <div className="section-8-inner-box-text">
               <h3>// OUR CLIENTS</h3>
@@ -197,7 +210,7 @@ const ServicesPage = () => {
               </Col>
             </Row>
           </div>
-        </div>
+        </div> */}
         {/* ================================= service-page-section-5-end ========================= */}
       </div>
     </>

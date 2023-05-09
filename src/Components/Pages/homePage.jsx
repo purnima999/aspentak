@@ -9,12 +9,12 @@ import "../../Css/homePage.css";
 import team from "../../Images/team.png";
 
 const HomePage = () => {
-
   // back to top button
   const backToTopHandler = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
+
   return (
     <>
       <div>
@@ -146,7 +146,7 @@ const HomePage = () => {
                 offers guidance and advice on staffing and recruiting options.
               </p>
               <Row>
-                <Col>
+                <Col lg={6} md={6} sm={12}>
                   <img />
                   <h4>Experience</h4>
                   <hr />
@@ -155,7 +155,7 @@ const HomePage = () => {
                     experience troubleshooting.
                   </p>
                 </Col>
-                <Col>
+                <Col lg={6} md={6} sm={12}>
                   <img />
                   <h4>Quick Support</h4>
                   <hr />
@@ -166,12 +166,12 @@ const HomePage = () => {
                 </Col>
               </Row>
             </Col>
-            <Col>
+            <Col lg={6} md={0}>
               <div className="section-3-right-panel">
                 <img src={two} />
                 <p>
-                  <i className="fa fa-long-arrow-right" aria-hidden="true"></i>LEARN
-                  MORE ABOUT US
+                  <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  LEARN MORE ABOUT US
                 </p>
               </div>
             </Col>
@@ -187,7 +187,7 @@ const HomePage = () => {
             of your Bussiness Idea Now
           </h1>
           <Row className="section-4-cards">
-            <Col className="section-4-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>01</h2>
@@ -198,14 +198,17 @@ const HomePage = () => {
                     We communicate directly with your team to find candidates.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
                     LEARN MORE
                   </Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="section-4-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>02</h2>
@@ -217,14 +220,17 @@ const HomePage = () => {
                     and needs.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
                     LEARN MORE
                   </Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="section-4-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>03</h2>
@@ -235,14 +241,17 @@ const HomePage = () => {
                     Our candidate pool comprises fully qualified experts.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
                     LEARN MORE
                   </Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="section-4-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>04</h2>
@@ -252,15 +261,18 @@ const HomePage = () => {
                     candidates.
                   </Card.Text>
                   <Card.Link href="#" id="card-link-1">
-                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
                     LEARN MORE
                   </Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
           </Row>
-          <Row classsName="section-4-images">
+          {/* <Row classsName="section-4-images">
             <Col className="section-4-images-col">
               <img className="section-4-img-1" src={two} />
               <div className="section-4-image-content">
@@ -272,18 +284,7 @@ const HomePage = () => {
                 </p>
               </div>
             </Col>
-            <Col className="section-4-images-col">
-              <img src={two} />
-              <div className="section-4-image-content">
-                <h1>15+</h1>
-                <h3>Countries Worldwide</h3>
-                <p>
-                  To succeed, every software solution must be deeply integrated
-                  into the existing tech environment..
-                </p>
-              </div>
-            </Col>
-          </Row>
+          </Row> */}
         </div>
         {/* ==================================================section4-End================================ */}
 
@@ -291,12 +292,12 @@ const HomePage = () => {
         <div className="home-page-section-5">
           <h3>// OUR SERVICE</h3>
           <Row>
-            <Col>
-              <p>
+            <Col lg={6} sm={12}>
+              <h1>
                 We Offer a Wide <br /> Variety of IT Services
-              </p>
+              </h1>
             </Col>
-            <Col>
+            <Col lg={6} sm={12}>
               <Button className="btn">ALL SERVICES</Button>
             </Col>
           </Row>
@@ -319,11 +320,24 @@ const HomePage = () => {
                 <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
+                <h3>Ability to Integrate</h3>
+                <p>
+                  We are proud to offer candidates that are quick to respond and
+                  integrate into your project, no matter what stage you are
+                  currently completing.
+                </p>
+              </div>
+            </Col>
+            <Col id="section-5-col" lg={4}>
+              <div className="section-5-col-icon">
+                <i className="fa fa-cogs" aria-hidden="true"></i>
+              </div>
+              <div className="section-5-col-content">
                 <h3>Initial Assessment</h3>
                 <p>
-                  We are a full-service IT staffing and recruitment consulting
-                  firm prepared to provide solutions for a wide variety of
-                  industries and projects.
+                  We will familiarize ourselves with your unique project and
+                  open a clean, clear dialogue with your team to ensure all
+                  information is understood correctly.
                 </p>
               </div>
             </Col>
@@ -332,11 +346,11 @@ const HomePage = () => {
                 <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>IT Consulting</h3>
+                <h3>Growth</h3>
                 <p>
-                  We are a full-service IT staffing and recruitment consulting
-                  firm prepared to provide solutions for a wide variety of
-                  industries and projects.
+                  Each candidate we offer for your IT staff needs will clearly
+                  understand the scope and scale of your project. They will
+                  agree to their job parameters.
                 </p>
               </div>
             </Col>
@@ -345,11 +359,11 @@ const HomePage = () => {
                 <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>IT Consulting</h3>
+                <h3>Discovery</h3>
                 <p>
-                  We are a full-service IT staffing and recruitment consulting
-                  firm prepared to provide solutions for a wide variety of
-                  industries and projects.
+                  Our IT consultant team will compile, review, and suggest
+                  recommendations based on the availability of our growing
+                  candidate pool.
                 </p>
               </div>
             </Col>
@@ -358,24 +372,10 @@ const HomePage = () => {
                 <i className="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>IT Consulting</h3>
+                <h3>All Levels</h3>
                 <p>
-                  We are a full-service IT staffing and recruitment consulting
-                  firm prepared to provide solutions for a wide variety of
-                  industries and projects.
-                </p>
-              </div>
-            </Col>
-            <Col id="section-5-col" lg={4}>
-              <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
-              </div>
-              <div className="section-5-col-content">
-                <h3>IT Consulting</h3>
-                <p>
-                  We are a full-service IT staffing and recruitment consulting
-                  firm prepared to provide solutions for a wide variety of
-                  industries and projects.
+                  We are proud to offer qualified candidates for every level and
+                  management stage of your IT organization.
                 </p>
               </div>
             </Col>
@@ -384,7 +384,7 @@ const HomePage = () => {
         {/* ==================================================section-5-end =============================== */}
 
         {/* ==================================================section-6-start ============================= */}
-        <div className="home-page-section-6">
+        {/* <div className="home-page-section-6">
           <Col className="section-6-image-col">
             <img src={two} />
             <div className="section-6-content">
@@ -393,7 +393,7 @@ const HomePage = () => {
               <Button className="btn">CONTACT US</Button>
             </div>
           </Col>
-        </div>
+        </div> */}
         {/* ==================================================section-6-end================================ */}
 
         {/* ==================================================section-7-start ============================= */}
@@ -407,27 +407,27 @@ const HomePage = () => {
                 the Goal of Trusting Relationships
               </h1>
               <Row className="section-7-grid">
-                <Col className="section-7-col">
+                <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-television" aria-hidden="true"></i>
                   <h3>WEB</h3>
                 </Col>
-                <Col className="section-7-col">
+                <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-android" aria-hidden="true"></i>
                   <h3>ANDRIOD</h3>
                 </Col>
-                <Col className="section-7-col">
-                  <i clclassNameass="fa fa-apple" aria-hidden="true"></i>
+                <Col className="section-7-col" lg={2} md={2}>
+                  <i className="fa fa-apple" aria-hidden="true"></i>
                   <h3>IOS</h3>
                 </Col>
-                <Col className="section-7-col">
+                <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-globe" aria-hidden="true"></i>
                   <h3>IOT</h3>
                 </Col>
-                <Col className="section-7-col">
+                <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-cog" aria-hidden="true"></i>
                   <h3>WEARALABLES</h3>
                 </Col>
-                <Col className="section-7-col">
+                <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-cloud" aria-hidden="true"></i>
                   <h3>CLOUD</h3>
                 </Col>
@@ -438,7 +438,7 @@ const HomePage = () => {
         {/* ==================================================section-7-end ============================= */}
 
         {/* ==================================================section-8-start =========================== */}
-        <div className="home-page-section-8">
+        {/* <div className="home-page-section-8">
           <div className="section-8-inner-box">
             <div className="section-8-inner-box-text">
               <h3>// OUR CLIENTS</h3>
@@ -486,7 +486,7 @@ const HomePage = () => {
               </Col>
             </Row>
           </div>
-        </div>
+        </div> */}
         {/* ==================================================section-8-end =========================== */}
       </div>
     </>

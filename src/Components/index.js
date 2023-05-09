@@ -5,6 +5,7 @@ import HomePage from './Pages/homePage';
 import AboutPage from './Pages/aboutPage';
 import ServicesPage from './Pages/servicesPage';
 import ContactPage from './Pages/contactPage';
+import CareerPage from './Pages/careerPage';
 
 const LayoutContent = (props) => {
     return (
@@ -17,7 +18,8 @@ const LayoutContent = (props) => {
                         {/* <HomePage/> */}
                         {/* <AboutPage/> */}
                         {/* <ServicesPage /> */}
-                        <ContactPage/>
+                        {/* <ContactPage/> */}
+                        <CareerPage/>
                     </div>
                 </div>
                 <Footer />

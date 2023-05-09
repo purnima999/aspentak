@@ -40,7 +40,7 @@
 }
 
 .service-page-section-3 p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 100;
     letter-spacing: 1px;
     font-family: "Nunito Sans", sans-serif;
@@ -64,6 +64,7 @@
     background-size: cover;
     padding: 130px 0px 130px 0px;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 .service-page-section-4 h3 {
@@ -83,7 +84,7 @@
     line-height: 80px;
 }
 
-.service-page-section-4 .btn{
+.service-page-section-4 .btn {
     border: none;
     margin-top: 30px;
     border-radius: 0px;
@@ -93,6 +94,52 @@
     font-weight: 600;
 }
 
-.service-page-section-4 .btn:hover{
+.service-page-section-4 .btn:hover {
     background-color: #7141b1;
+}
+
+@media (max-width:786px) {
+    .service-page-section-2 #title {
+        font-size: 28px;
+    }
+
+    .service-page-section-2 {
+        overflow: hidden;
+    }
+}
+
+@media (max-width:991px) {
+    .service-section-4-right-panel {
+        display: none;
+    }
+
+    .service-page-section-3 {
+        padding: 125px 20px 80px 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .home-page-section-5 {
+        padding: 130px 20px 0px 20px;
+    }
+}
+
+@media (max-width:696px) {
+    .service-page-section-4 h3 {
+        font-size: 15px;
+    }
+
+    .service-page-section-4 h1 {
+        font-size: 50px;
+    }
+
+    .service-page-section-4 .btn {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width:486px) {
+    .service-page-section-4 h1 {
+        font-size: 25px;
+    }
 }

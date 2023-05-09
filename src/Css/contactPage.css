@@ -146,14 +146,14 @@
 
 ::placeholder {
     color: #fff;
-  }
+}
 
 .contact-section-2-form #form-input:focus {
     background: rgba(255, 255, 255, 0.5);
     color: #fff
 }
 
-.contact-section-2-form .form-btn{
+.contact-section-2-form .form-btn {
     font-weight: 800;
     background: #fff;
     color: #1b1d21;
@@ -177,8 +177,20 @@
     margin-top: 10px;
 }
 
-.contact-section-2-form .form-btn:hover{
+.contact-section-2-form .form-btn:hover {
     background: #7141b1;
     color: #ffff;
     text-decoration: none;
+}
+
+
+@media (max-width:786px) {
+    .contact-page-section-2-left {
+        margin-right: 0px;
+    }
+    .contact-page-section-2{
+        padding: 100px 20px;
+        overflow: hidden;
+    }
+
 }

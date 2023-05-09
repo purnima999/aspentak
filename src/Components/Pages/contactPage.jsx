@@ -3,8 +3,22 @@ import "../../Css/contactPage.css";
 import { Row, Col, Card, Button } from "react-bootstrap";
 
 const ContactPage = () => {
+  // back to top button
+  const backToTopHandler = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
+      <div>
+        <button
+          id="backtotopbtn"
+          title="Go to top"
+          onClick={() => backToTopHandler()}
+        >
+          <i className="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
       <div className="contact-page">
         <div className="contact-page-section-1">
           <h1>Contact</h1>
@@ -13,7 +27,7 @@ const ContactPage = () => {
         {/* ================================= contact-page-section-2-start ==========================  */}
         <div className="contact-page-section-2">
           <Row>
-            <Col>
+            <Col lg={6} md={6} sm={12}>
               <div className="contact-page-section-2-left">
                 <h3>// CONTACT DETAILS</h3>
                 <h1>Contact Our IT Consultant Team</h1>
@@ -74,7 +88,7 @@ const ContactPage = () => {
                 </Card>
               </div>
             </Col>
-            <Col>
+            <Col lg={6} md={6} sm={12}>
               <div className="contact-page-section-2-right">
                 <div className="contact-section-2-form">
                   <h1>Ready to Get Started?</h1>

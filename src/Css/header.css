@@ -43,7 +43,19 @@ span {
 .site-header {
     width: 100%;
     overflow-x: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 150px;
+}
+
+@media (max-width:1024px){
+    .site-header {
+        width: 100%;
+        overflow-x: hidden;
+        margin-bottom: 70px;
+    }
+}
+
+@media(max-width:425px){
+    
 }
 
 .site-header-top {
@@ -82,7 +94,7 @@ span {
 /* navbar */
 
 .site-header-bottom {
-    padding: 5px;
+    padding: 0px 0px 5px 0px;
     margin: 0px;
     width: 100%;
     position: fixed;
@@ -171,7 +183,7 @@ span {
     }
 
     .site-header-logo {
-        width: 70px;
+        width: 80px;
         height: auto;
         max-width: 100%;
         border: none;
@@ -182,9 +194,9 @@ span {
     .main-menu-side-bar {
         display: block;
         float: right;
-        margin-right: 20px;
+        /* margin-right: 20px; */
         cursor: pointer;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .main-menu-side-bar:hover {
@@ -249,11 +261,8 @@ span {
 
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .main-menu-side-bar {
-        margin-right: 60px;
         float: right;
     }
-
-    
 }

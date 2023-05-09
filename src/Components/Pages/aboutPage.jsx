@@ -4,8 +4,22 @@ import { Row, Col, Card, Button } from "react-bootstrap";
 import two from "../../Images/two.jpg";
 
 const AboutPage = () => {
+  // back to top button
+  const backToTopHandler = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
+      <div>
+        <button
+          id="backtotopbtn"
+          title="Go to top"
+          onClick={() => backToTopHandler()}
+        >
+          <i className="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
       <div className="about-page">
         {/* =================================== about-page-section-1-start ================================== */}
         <div className="about-page-section-1">
@@ -16,7 +30,7 @@ const AboutPage = () => {
         {/* =================================== about-page-section-2-start ================================== */}
         <div className="about-page-section-2">
           <Row>
-            <Col>
+            <Col lg={6} md={12}>
               <div className="section-2-left-panel">
                 <h3>// ABOUT ASPEN TEK CONSULTANTS</h3>
                 <h1>IT CONSULTING SERVICES & SOLUTIONS</h1>
@@ -47,7 +61,7 @@ const AboutPage = () => {
                 </p>
               </div>
             </Col>
-            <Col>
+            <Col lg={6} md={12}>
               <div className="section-2-right-panel">
                 <Row className="right-panel-row1">
                   <div className="img1">Our Mission</div>
@@ -66,26 +80,30 @@ const AboutPage = () => {
         {/* =================================== about-page-section-3-start ================================== */}
         <div className="about-page-section-3">
           <Row>
-            <Col>
+            <Col lg={7} md={12}>
               <div className="about-section-3-left-panel">
                 <img src={two} />
               </div>
             </Col>
-            <Col>
+            <Col lg={5} md={12}>
               <div className="about-section-3-right-panel">
                 <h3>// OUR MISSION</h3>
                 <h1>About Aspen Tek Consultants</h1>
                 <Row className="about-section-3-grid" id="aboutgrid">
-                  <Col className="about-section-3-col">
-                    <i className="fa fa-television" id="ic" aria-hidden="true"></i>
+                  <Col className="about-section-3-col" lg={2} md={2} sm={2}>
+                    <i
+                      className="fa fa-television"
+                      id="ic"
+                      aria-hidden="true"
+                    ></i>
                   </Col>
-                  <Col className="about-section-3-col">
+                  <Col className="about-section-3-col" lg={2} md={2} sm={2}>
                     <i className="fa fa-android" aria-hidden="true"></i>
                   </Col>
-                  <Col className="about-section-3-col">
+                  <Col className="about-section-3-col" lg={2} md={2} sm={2}>
                     <i className="fa fa-apple" aria-hidden="true"></i>
                   </Col>
-                  <Col className="about-section-3-col">
+                  <Col className="about-section-3-col" lg={2} md={2} sm={2}>
                     <i className="fa fa-globe" aria-hidden="true"></i>
                   </Col>
                 </Row>
@@ -127,7 +145,7 @@ const AboutPage = () => {
                 technicians available.
               </p>
             </Col>
-            <Col>
+            <Col lg={6} md={0}>
               <div className="about-section-4-right-panel">
                 <img src={two} />
               </div>
@@ -137,66 +155,94 @@ const AboutPage = () => {
         {/* =================================== about-page-section-4-end ================================== */}
 
         {/* =================================== about-page-section-5-start ================================== */}
-        <div className="about-page-section-5">
-          <h3>//CORE VALUES</h3>
+        <div className="home-page-section-4">
+          <h3>// WHAT WE OFFER</h3>
           <h1>
-            About Aspen Tek <br />
-            Consultants
+            Design the Concept <br />
+            of your Bussiness Idea Now
           </h1>
-          <Row className="about-section-5-cards">
-            <Col className="about-section-5-cards-col">
+          <Row className="section-4-cards">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>01</h2>
-                  <Card.Title id="card-tittle">Integrity</Card.Title>
+                  <Card.Title id="card-tittle">
+                    Full Visibility and Transparency
+                  </Card.Title>
                   <Card.Text id="card-text">
-                    We uphold the highest standard of transparency and
-                    integrity, no matter the client or project. Each of our
-                    candidates' experience and education is fully vetted.
+                    We communicate directly with your team to find candidates.
                   </Card.Text>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="#" id="card-link-1">
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                    LEARN MORE
+                  </Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="about-section-5-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>02</h2>
-                  <Card.Title id="card-tittle">Trust</Card.Title>
+                  <Card.Title id="card-tittle">
+                    Dedicated Account Manager
+                  </Card.Title>
                   <Card.Text id="card-text">
-                    Our clients rely on our experience and expertise to solve
-                    their unique challenges. Our reputation rests on our ability
-                    to deliver on time and in budget.
+                    You’ll have a concierge host to manage all of your requests
+                    and needs.
                   </Card.Text>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="#" id="card-link-1">
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                    LEARN MORE
+                  </Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="about-section-5-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>03</h2>
-                  <Card.Title id="card-tittle">Diversity</Card.Title>
+                  <Card.Title id="card-tittle">
+                    IT Operational Standards
+                  </Card.Title>
                   <Card.Text id="card-text">
-                    Our focus is always on the skills and talents of our
-                    potential candidates. We are happy to frame the candidate
-                    search depending on your needs.
+                    Our candidate pool comprises fully qualified experts.
                   </Card.Text>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="#" id="card-link-1">
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                    LEARN MORE
+                  </Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="about-section-5-cards-col">
+            <Col className="section-4-cards-col" lg={3} md={6} sm={12}>
               <Card id="card">
                 <Card.Body>
                   <h2>04</h2>
-                  <Card.Title id="card-tittle">Teamwork</Card.Title>
+                  <Card.Title id="card-tittle">Fast Response</Card.Title>
                   <Card.Text id="card-text">
-                    Every one of our projects requires the input and open
-                    communication of our entire team. We want to provide the
-                    best quality service, and that requires a team effort.
+                    We strive to always provide you with the best-fit
+                    candidates.
                   </Card.Text>
-                  <Card.Link href="#">Another Link</Card.Link>
+                  <Card.Link href="#" id="card-link-1">
+                    <i
+                      className="fa fa-long-arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                    LEARN MORE
+                  </Card.Link>
+                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
@@ -208,19 +254,19 @@ const AboutPage = () => {
         <div className="about-page-section-6">
           <div className="about-section-6-image-col">
             <Row>
-              <Col>
+              <Col lg={3} md={6} sm={12}>
                 <h1>330+</h1>
                 <p> ACTIVE CLIENTS</p>
               </Col>
-              <Col>
+              <Col lg={3} md={6} sm={12}>
                 <h1>850+</h1>
                 <p>Projects Done</p>
               </Col>
-              <Col>
+              <Col lg={3} md={6} sm={12}>
                 <h1>25+</h1>
                 <p> team advisior</p>
               </Col>
-              <Col>
+              <Col lg={3} md={6} sm={12}>
                 <h1>10+</h1>
                 <p> Glorious years</p>
               </Col>
@@ -233,7 +279,7 @@ const AboutPage = () => {
 
         <div className="about-page-section-7">
           <Row>
-            <Col>
+            <Col lg={6} md={12}>
               <div className="about-section-7-left-panel">
                 <h3>// IT STARTS WITH YOU</h3>
                 <h1>
@@ -250,14 +296,13 @@ const AboutPage = () => {
                 <Button className="btn">CONTACT US</Button>
               </div>
             </Col>
-            <Col>
+            <Col lg={6} md={0}>
               <div className="about-section-7-right-panel">
                 <img src={two} />
               </div>
             </Col>
           </Row>
         </div>
-
         {/* =================================== about-page-section-7-end ================================  */}
       </div>
     </>
