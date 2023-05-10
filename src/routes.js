@@ -8,11 +8,11 @@ const CareerPage = React.lazy(() => import('./Components/Pages/careerPage.jsx'))
 
 const routes = [
 
+    { path: '/aboutUs', element: <AboutPage /> },
+    { path: '/services', element: <ServicesPage /> },
+    { path: '/contactUs', element: <ContactPage /> },
+    { path: '/career', element: <CareerPage /> },
     { path: '/', element: <HomePage /> },
-    { path: 'aboutUs', element: <AboutPage /> },
-    { path: 'services', element: <ServicesPage /> },
-    { path: 'contactUs', element: <ContactPage /> },
-    { path: 'career', element: <CareerPage /> },
 
 ]
 

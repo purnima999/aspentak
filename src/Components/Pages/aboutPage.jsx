@@ -251,7 +251,7 @@ const AboutPage = () => {
         {/* =================================== about-page-section-5-start ================================== */}
 
         {/* =================================== about-page-section-6-start ================================== */}
-        <div className="about-page-section-6">
+        {/* <div className="about-page-section-6">
           <div className="about-section-6-image-col">
             <Row>
               <Col lg={3} md={6} sm={12}>
@@ -272,7 +272,7 @@ const AboutPage = () => {
               </Col>
             </Row>
           </div>
-        </div>
+        </div> */}
         {/* =================================== about-page-section-6-end ================================== */}
 
         {/* =================================== about-page-section-7-start ================================  */}

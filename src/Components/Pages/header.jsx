@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Css/header.css";
 import { Row, Col, Button } from "react-bootstrap";
 import logo from "../../Images/logo1.png";
-import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom"
 const Header = () => {
   const openMenuHandler = () => {
     document.querySelector(".main-menu").classList.add("show");
@@ -14,6 +13,9 @@ const Header = () => {
     document.querySelector(".main-menu").classList.remove("show");
     document.querySelector(".main-menu").classList.add("hide");
   };
+  useEffect(() => {
+    document.querySelector(".main-menu").classList.add("hide");
+  }, []);
 
   return (
     <div className="site-header">
@@ -105,19 +107,21 @@ const Header = () => {
                   ></i>
                 </li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/"> Home</Link>
                 </li>
                 <li>
-                  <a href="aboutUs">About Us</a>
+                  <Link to="/aboutUs">About Us</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <Link to="/contactUs">Contact</Link>
                 </li>
                 <li>
-                  <Button className="btn">CAREER</Button>
+                  <Link to="/career">
+                    <Button className="btn" type="button">CAREER</Button>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -137,4 +141,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default (Header);
