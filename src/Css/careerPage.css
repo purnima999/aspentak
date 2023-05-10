@@ -1,5 +1,5 @@
 .career-page {
-    padding: 80px 50px;
+    padding: 20px 50px;
 }
 
 .career-page .career-page-tabs {
@@ -8,7 +8,8 @@
     align-items: center;
 }
 
-.career-page-tabs .btn {
+.career-page-tabs .contract-btn,
+.career-page-tabs .permanent-btn {
     border: none;
     margin-top: 30px;
     border-radius: 0px;
@@ -16,14 +17,20 @@
     color: #fff;
     background-color: #23BBB7;
     font-weight: 600;
-    border: 1px solid black;
     outline: none;
-
 }
 
-.career-page-tabs .btn:hover {
+.career-page-tabs .contract-btn.current,
+.career-page-tabs .permanent-btn.current {
+    background-color: #7141b1;
+    outline: none;
+}
+
+.career-page-tabs .contract-btn:hover,
+.career-page-tabs .permanent-btn:hover {
     background-color: #7141b1;
 }
+
 
 @media(max-width:425px) {
     .career-page .career-page-tabs {
@@ -61,8 +68,8 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.contract-tab-page .btn, 
-.permanent-tab-page .btn{
+.contract-tab-page .btn,
+.permanent-tab-page .btn {
     border: none;
     margin-top: 30px;
     border-radius: 0px;
@@ -73,7 +80,17 @@
     outline: none;
 }
 
-.contract-tab-page .btn:hover, 
-.permanent-tab-page .btn:hover{
-    background-color: #23BBB7;
+
+.contract-tab-page.current,
+.permanent-tab-page.current {
+    display: block;
 }
+
+.contract-tab-page,
+.permanent-tab-page {
+    display: none;
+}
+
+
+/* form */
+

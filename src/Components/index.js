@@ -31,7 +31,7 @@ const LayoutContent = (props) => {
 class Layout extends Component {
     constructor(props) {
         super(props);
-        console.log("layout==>", "naavvavvaa", this.props.Layout);
+        console.log("layout==>", "naavvavvaa", this.props);
     }
 
 
@@ -42,8 +42,6 @@ class Layout extends Component {
         return (
             <React.Fragment>
                 <LayoutContent />
-                {/* <h1>jjdjjdjdjj</h1>
-                 */}
                 {/* {this.getRenderLayout(this.props.Layout)} */}
             </React.Fragment>
         )

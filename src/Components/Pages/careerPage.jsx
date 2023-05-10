@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { Button, Row, Col } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Row, Col, Modal, Form } from "react-bootstrap";
 import "../../Css/careerPage.css";
-import ApplyForm from './applyForm';
 
 const CareerPage = () => {
   // back to top button
@@ -10,12 +9,35 @@ const CareerPage = () => {
     document.documentElement.scrollTop = 0;
   };
 
-  const [isApply, setApply] = useState(false);
+  // show hide modal
+  const [show, setShow] = useState(false);
 
-  const applyHandler = () => {
-    setApply(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  useEffect(() => {
+    document.querySelector(".contract-btn").classList.add("current");
+  }, []);
+
+  //upload file
+
+  const uploadFile = (e) => {
+    console.log("fileName", e);
   };
 
+  const contractBtnHandler = () => {
+    document.querySelector(".contract-btn").classList.add("current");
+    document.querySelector(".permanent-btn").classList.remove("current");
+    document.querySelector(".contract-tab-page").classList.add("current");
+    document.querySelector(".permanent-tab-page").classList.remove("current");
+  };
+
+  const permanentBtnHandler = () => {
+    document.querySelector(".contract-btn").classList.remove("current");
+    document.querySelector(".permanent-btn").classList.add("current");
+    document.querySelector(".permanent-tab-page").classList.add("current");
+    document.querySelector(".contract-tab-page").classList.remove("current");
+  };
   return (
     <>
       <div>
@@ -27,112 +49,175 @@ const CareerPage = () => {
           <i className="fa fa-long-arrow-up" aria-hidden="true"></i>
         </button>
       </div>
-      {/* <ApplyForm/> */}
       <div className="career-page">
         <div className="career-page-tabs">
-          <Button className="btn">Contract Based </Button>
-          <Button className="btn">Permanent Employees</Button>
+          <Button className="contract-btn" onClick={() => contractBtnHandler()}>
+            Contract Based
+          </Button>
+          <Button
+            className="permanent-btn"
+            onClick={() => permanentBtnHandler()}
+          >
+            Permanent Employees
+          </Button>
         </div>
 
         {/* =========================================== contract page tab start ====================================== */}
-        <div className="contract-tab-page">
+        <div className="contract-tab-page current">
           <Row>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn" onClick={() => applyHandler()}>
+              <Button className="btn" onClick={() => handleShow()}>
                 Apply
               </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn" onClick={() => applyHandler()}>
+              <Button className="btn" onClick={() => handleShow()}>
                 Apply
               </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
           </Row>
         </div>
         {/* =========================================== contract page tab end ====================================== */}
 
         {/* =========================================== permanent page tab start ====================================== */}
-
         <div className="permanent-tab-page">
           <Row>
             <Col id="col">
-              <h3>Designation</h3>
+              <h3>hello</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
             <Col id="col">
               <h3>Designation</h3>
               <p>Details</p>
-              <Button className="btn">Apply</Button>
+              <Button className="btn" onClick={() => handleShow()}>
+                Apply
+              </Button>
             </Col>
           </Row>
         </div>
       </div>
-      {isApply ? <ApplyForm /> : ""}
+
+      {/* form */}
+      <div className="applyForm" id="form">
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton></Modal.Header>
+          <Modal.Body>
+            <Form>
+              <Form.Group className="mb-3" controlId="formGroupEmail">
+                <Form.Control type="text" placeholder="Name" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formGroupPassword">
+                <Form.Control
+                  type="Email Address"
+                  placeholder="Email Address"
+                />
+              </Form.Group>
+              <Form.Group controlId="formFile" className="mb-3">
+                <Form.Control type="file" />
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              submit
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
     </>
   );
 };
