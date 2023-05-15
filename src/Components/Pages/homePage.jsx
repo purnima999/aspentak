@@ -409,27 +409,27 @@ const HomePage = () => {
               <Row className="section-7-grid">
                 <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-television" aria-hidden="true"></i>
-                  <h3>WEB</h3>
+                  <h3>Digital</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-android" aria-hidden="true"></i>
-                  <h3>ANDRIOD</h3>
+                  <h3>Embedded Systems​</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-apple" aria-hidden="true"></i>
-                  <h3>IOS</h3>
+                  <h3>Mechanical</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-globe" aria-hidden="true"></i>
-                  <h3>IOT</h3>
+                  <h3>ERP</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-cog" aria-hidden="true"></i>
-                  <h3>WEARALABLES</h3>
+                  <h3>Robotics</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
                   <i className="fa fa-cloud" aria-hidden="true"></i>
-                  <h3>CLOUD</h3>
+                  <h3>IoT</h3>
                 </Col>
               </Row>
             </div>

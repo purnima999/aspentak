@@ -46,6 +46,18 @@
     }
 }
 
+.contract-tab-page ol,
+.permanent-tab-page ol {
+    list-style: none;
+    padding-left: 0px;
+    line-height: 15px;
+}
+
+.contract-tab-page ol li span,
+.permanent-tab-page ol li span {
+    font-weight: 900;
+}
+
 .contract-tab-page,
 .permanent-tab-page {
     padding: 50px 0px;
@@ -56,16 +68,16 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 2px 4px 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
-    margin: 20px;
+    margin: 10px;
 
 }
 
 
 .contract-tab-page #col:hover,
 .permanent-tab-page #col:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .contract-tab-page .btn,
@@ -93,4 +105,3 @@
 
 
 /* form */
-

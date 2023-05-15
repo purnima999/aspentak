@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Row, Col, Modal, Form } from "react-bootstrap";
 import "../../Css/careerPage.css";
+import jsonData from "../../JsonData/profiles.json";
 
 const CareerPage = () => {
   // back to top button
@@ -38,6 +39,9 @@ const CareerPage = () => {
     document.querySelector(".permanent-tab-page").classList.add("current");
     document.querySelector(".contract-tab-page").classList.remove("current");
   };
+
+  // console.log("contractBasedJobs", contractBasedJobs);
+
   return (
     <>
       <div>
@@ -65,62 +69,38 @@ const CareerPage = () => {
         {/* =========================================== contract page tab start ====================================== */}
         <div className="contract-tab-page current">
           <Row>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
+            {jsonData?.contractBasedJobs?.length > 0 &&
+              jsonData?.contractBasedJobs?.map((item, index) => {
+                return (
+                  <Col id="col">
+                    <ol>
+                      <li>
+                        <span>Company:</span>
+                        {item?.company}
+                      </li>
+                      <li>
+                        <span>Job Role:</span>
+                        {item?.jobRole}
+                      </li>
+                      <li>
+                        <span>Qualification:</span>
+                        {item?.qualification}
+                      </li>
+                      <li>
+                        <span>Experience:</span>
+                        {item?.experience}
+                      </li>
+                      <li>
+                        <span>Location:</span>
+                        {item?.location}
+                      </li>
+                    </ol>
+                    <Button className="btn" onClick={() => handleShow()}>
+                      Apply
+                    </Button>
+                  </Col>
+                );
+              })}
           </Row>
         </div>
         {/* =========================================== contract page tab end ====================================== */}
@@ -128,62 +108,38 @@ const CareerPage = () => {
         {/* =========================================== permanent page tab start ====================================== */}
         <div className="permanent-tab-page">
           <Row>
-            <Col id="col">
-              <h3>hello</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
-            <Col id="col">
-              <h3>Designation</h3>
-              <p>Details</p>
-              <Button className="btn" onClick={() => handleShow()}>
-                Apply
-              </Button>
-            </Col>
+            {jsonData?.permanentEmp?.length > 0 &&
+              jsonData?.permanentEmp?.map((item, index) => {
+                return (
+                  <Col id="col">
+                    <ol>
+                      <li>
+                        <span>Company:</span>
+                        {item?.company}
+                      </li>
+                      <li>
+                        <span>Job Role:</span>
+                        {item?.jobRole}
+                      </li>
+                      <li>
+                        <span>Qualification:</span>
+                        {item?.qualification}
+                      </li>
+                      <li>
+                        <span>Experience:</span>
+                        {item?.experience}
+                      </li>
+                      <li>
+                        <span>Location:</span>
+                        {item?.location}
+                      </li>
+                    </ol>
+                    <Button className="btn" onClick={() => handleShow()}>
+                      Apply
+                    </Button>
+                  </Col>
+                );
+              })}
           </Row>
         </div>
       </div>

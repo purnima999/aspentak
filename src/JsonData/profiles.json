@@ -1,0 +1,90 @@
+{
+  "contractBasedJobs": [
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "INFOTECH",
+      "jobRole": "QA",
+      "qualification": "MCA",
+      "experience": "5",
+      "location": "Hyderabad"
+    }
+  ],
+  "permanentEmp": [
+    {
+      "company": "Vasavi groups",
+      "jobRole": "Civil engineer",
+      "qualification": "B.tech",
+      "experience": "3",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "Vasavi groups",
+      "jobRole": "Civil engineer",
+      "qualification": "B.tech",
+      "experience": "3",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "Vasavi groups",
+      "jobRole": "Civil engineer",
+      "qualification": "B.tech",
+      "experience": "3",
+      "location": "Hyderabad"
+    },
+    {
+      "company": "Vasavi groups",
+      "jobRole": "Civil engineer",
+      "qualification": "B.tech",
+      "experience": "3",
+      "location": "Hyderabad"
+    }
+  ]
+}
