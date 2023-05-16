@@ -7,6 +7,7 @@ import client5 from "../../Images/client5.png";
 import "font-awesome/css/font-awesome.min.css";
 import "../../Css/homePage.css";
 import team from "../../Images/team.png";
+// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const HomePage = () => {
   // back to top button
@@ -302,80 +303,55 @@ const HomePage = () => {
             </Col>
           </Row>
           <Row className="section-5-grid">
-            <Col id="section-5-col" lg={4}>
+            <Col id="section-5-col" lg={3}>
               <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>IT Consulting</h3>
+                <h3>Permanent Hiring</h3>
                 <p>
-                  We are a full-service IT staffing and recruitment consulting
-                  firm prepared to provide solutions for a wide variety of
-                  industries and projects.
+                  We help our clients staff their full time employment needs, by
+                  finding the right resource taking into consideration their CPH
+                  and Gender diversity.
                 </p>
               </div>
             </Col>
-            <Col id="section-5-col" lg={4}>
+            <Col id="section-5-col" lg={3}>
               <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>Ability to Integrate</h3>
+                <h3>Contract Hiring</h3>
                 <p>
-                  We are proud to offer candidates that are quick to respond and
-                  integrate into your project, no matter what stage you are
-                  currently completing.
+                  Providing contract staff for their adhoc postitions, in the
+                  shortest period and for flexible onboarding and offboarding of
+                  resources.
                 </p>
               </div>
             </Col>
-            <Col id="section-5-col" lg={4}>
+            <Col id="section-5-col" lg={3}>
               <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
+                <i class="fa fa-id-badge" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>Initial Assessment</h3>
+                <h3>RPO </h3>
                 <p>
-                  We will familiarize ourselves with your unique project and
-                  open a clean, clear dialogue with your team to ensure all
-                  information is understood correctly.
+                  End to End program managing all the recruitment needs and
+                  maintaining all the matrix, CPH, Gender diversity, Source mix,
+                  HTD with proper documentation.
                 </p>
               </div>
             </Col>
-            <Col id="section-5-col" lg={4}>
+            <Col id="section-5-col" lg={3}>
               <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
               </div>
               <div className="section-5-col-content">
-                <h3>Growth</h3>
+                <h3>Campus Hiring</h3>
                 <p>
-                  Each candidate we offer for your IT staff needs will clearly
-                  understand the scope and scale of your project. They will
-                  agree to their job parameters.
-                </p>
-              </div>
-            </Col>
-            <Col id="section-5-col" lg={4}>
-              <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
-              </div>
-              <div className="section-5-col-content">
-                <h3>Discovery</h3>
-                <p>
-                  Our IT consultant team will compile, review, and suggest
-                  recommendations based on the availability of our growing
-                  candidate pool.
-                </p>
-              </div>
-            </Col>
-            <Col id="section-5-col" lg={4}>
-              <div className="section-5-col-icon">
-                <i className="fa fa-cogs" aria-hidden="true"></i>
-              </div>
-              <div className="section-5-col-content">
-                <h3>All Levels</h3>
-                <p>
-                  We are proud to offer qualified candidates for every level and
-                  management stage of your IT organization.
+                  Identifying reputed institutions with quality students,
+                  conducting the preliminary rounds of evaluation/ Tests and
+                  prepare for the final round of interview with client.
                 </p>
               </div>
             </Col>
@@ -412,7 +388,7 @@ const HomePage = () => {
                   <h3>Digital</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
-                  <i className="fa fa-android" aria-hidden="true"></i>
+                  {/* <FontAwesomeIcon icon="fa-solid fa-microchip" style={{color: "#f4f5f6",}} /> */}
                   <h3>Embedded Systems​</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>

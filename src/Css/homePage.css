@@ -452,13 +452,13 @@
 .section-5-col-icon .fa {
     font-size: 40px;
     color: #23BBB7;
-    padding: 0px;
+    padding-right: 10px;
     margin: 0px;
     float: left;
 }
 
 .section-5-col-content {
-    padding: 0px 30px 0px 45px;
+    padding: 0px 0px 0px 30px;
     margin-left: 20px;
 }
 

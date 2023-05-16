@@ -82,6 +82,7 @@
 }
 
 .industry-page #col12 {
-    background-image: url("../Images/two.jpg");
+    background-image: url("../Images/col12.jpg");
     height: 200px;
+    background-repeat: no-repeat;
 }

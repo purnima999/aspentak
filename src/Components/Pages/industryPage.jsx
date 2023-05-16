@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import bgImg from "../../Images/two.jpg";
 import "../../Css/industryPage.css";
 
+
 const IndustryPage = () => {
   return (
     <>
