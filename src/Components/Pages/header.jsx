@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../Css/header.css";
 import { Row, Col, Button } from "react-bootstrap";
 import logo from "../../Images/logo1.png";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 const Header = () => {
   const openMenuHandler = () => {
     document.querySelector(".main-menu").classList.add("show");
@@ -116,11 +116,16 @@ const Header = () => {
                   <Link to="/services">Services</Link>
                 </li>
                 <li>
+                  <Link to="/industry">Industry</Link>
+                </li>
+                <li>
                   <Link to="/contactUs">Contact</Link>
                 </li>
                 <li>
                   <Link to="/career">
-                    <Button className="btn" type="button">CAREER</Button>
+                    <Button className="btn" type="button">
+                      CAREER
+                    </Button>
                   </Link>
                 </li>
               </ul>
@@ -141,4 +146,4 @@ const Header = () => {
   );
 };
 
-export default (Header);
+export default Header;
