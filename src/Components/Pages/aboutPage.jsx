@@ -35,21 +35,28 @@ const AboutPage = () => {
                 <h3>// ABOUT ASPEN TEK CONSULTANTS</h3>
                 <h1>IT CONSULTING SERVICES & SOLUTIONS</h1>
                 <p>
+                  Aspentek Informatics Private Limited is a Professional
+                  Services company, head quartered at Hyderabad, India And
+                  Irving US. Aspentek is a fast growing end-to-end Professional
+                  Service provider of innovative solutions to the clients across
+                  various domains worldwide to achieve business transformation
+                  by leveraging on its industry insight and technology expertise
+                  to various companies in PAN India
+                </p>
+                <p>
                   Our IT consulting team provides our clients with high-quality
                   service and support from the initial email to the satisfied
                   recruitment connection. We are privileged to have brought
                   together such a valuable team of experts, recruiting
                   specialists, hiring managers, and networking staff to partner
-                  with your company.
-                </p>
-                <p>
-                  We work hard to align the right tech industry team to fit your
-                  business needs. With a strong understanding of various tech
-                  solutions and how they may affect your revenue streams, Aspen
-                  Tek Consultants brings IT staffing to an elevated level for
-                  each of our clients. We empower you to reach the utmost
-                  potential of your company and industry using time-tested and
-                  strategic employee and contractor placement.
+                  with your company. We work hard to align the right tech
+                  industry team to fit your business needs. With a strong
+                  understanding of various tech solutions and how they may
+                  affect your revenue streams, Aspentek Consultants brings IT
+                  staffing to an elevated level for each of our clients. We
+                  empower you to reach the utmost potential of your company and
+                  industry using time-tested and strategic employee and
+                  contractor placement.
                 </p>
                 <p>
                   Aspen Tek Co a range of valuable staffing skills. We work in
@@ -101,7 +108,7 @@ const AboutPage = () => {
                     <i className="fa fa-android" aria-hidden="true"></i>
                   </Col>
                   <Col className="about-section-3-col" lg={2} md={2} sm={2}>
-                    <i className="fa fa-apple" aria-hidden="true"></i>
+                    <i class="fa fa-microchip" aria-hidden="true"></i>
                   </Col>
                   <Col className="about-section-3-col" lg={2} md={2} sm={2}>
                     <i className="fa fa-globe" aria-hidden="true"></i>

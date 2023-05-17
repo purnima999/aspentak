@@ -7,7 +7,7 @@ import client5 from "../../Images/client5.png";
 import "font-awesome/css/font-awesome.min.css";
 import "../../Css/homePage.css";
 import team from "../../Images/team.png";
-// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HomePage = () => {
   // back to top button
@@ -388,11 +388,11 @@ const HomePage = () => {
                   <h3>Digital</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
-                  {/* <FontAwesomeIcon icon="fa-solid fa-microchip" style={{color: "#f4f5f6",}} /> */}
+                  <i class="fa fa-microchip" aria-hidden="true"></i>
                   <h3>Embedded Systems​</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
-                  <i className="fa fa-apple" aria-hidden="true"></i>
+                  <i className="fa fa-cog" aria-hidden="true"></i>
                   <h3>Mechanical</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
@@ -400,7 +400,7 @@ const HomePage = () => {
                   <h3>ERP</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>
-                  <i className="fa fa-cog" aria-hidden="true"></i>
+                  <i class="fa fa-android" aria-hidden="true"></i>
                   <h3>Robotics</h3>
                 </Col>
                 <Col className="section-7-col" lg={2} md={2}>

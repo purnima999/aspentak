@@ -41,19 +41,29 @@ const Footer = () => {
               <Col lg={3} md={6}>
                 <h4>Contact</h4>
                 <ol>
-                  <li>1425 West Pioneer Drive, Suite 252 Irving TX 75061</li>
-                  <li> Email:info@aspenteksystems.com</li>
                   <li>
-                    Tel: 972-275-9020
+                    India: 33-110/F/104, Officers Colony, R.K.Puram, Hyderabad,
+                    Telangana, India, 500056
                     <br />
-                    Mobile: 972-275-9020
+                    1425 West Pioneer Drive, Suite 252 Irving, TX 75061
+                  </li>
+
+                  <li>
+                    Email:satya@aspentek.in
+                    <br />
+                    nfo@aspenteksystems.com
+                  </li>
+                  <li>
+                    Tel: 733-700-7734
+                    <br />
+                    Mobile: 72-275-9020
                   </li>
                 </ol>
               </Col>
             </Row>
           </div>
           <div className="footer-copyright">
-            <p>© 2023 Naveen Tek Systems. All rights reserved.</p>
+            <p>© 2023 ASPEN TEK Systems. All rights reserved.</p>
           </div>
         </div>
       </div>
