@@ -22,6 +22,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 #col1:hover,
@@ -36,7 +37,9 @@
 #col10:hover,
 #col11:hover,
 #col12:hover {
-    /* transform: scale(1.5); */
+    /* transform: scale(1.5);
+    width: 200px;
+    height: 100px; */
 }
 
 .industry-page #col1 {
