@@ -21,7 +21,7 @@ const ContactPage = () => {
       </div>
       <div className="contact-page">
         <div className="contact-page-section-1">
-          <h1>Contact</h1>
+          <h1>CONTACT</h1>
         </div>
 
         {/* ================================= contact-page-section-2-start ==========================  */}

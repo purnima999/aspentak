@@ -21,7 +21,7 @@ const ServicesPage = () => {
         </button>
       </div>
       <div className="service-page">
-        <div className="service-page-section-1">
+        <div className="about-page-section-1">
           <h1>Services</h1>
         </div>
 
