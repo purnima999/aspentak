@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "../../Css/aboutPage.css";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import two from "../../Images/two.jpg";
+import sec3Img from "../../Images/about-5.png";
+import sec4Img from "../../Images/about-6.png";
+import sec7Img from "../../Images/about-7.png";
 
 const AboutPage = () => {
   // back to top button
@@ -14,6 +17,7 @@ const AboutPage = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   });
+
   return (
     <>
       <div>
@@ -35,7 +39,7 @@ const AboutPage = () => {
         {/* =================================== about-page-section-2-start ================================== */}
         <div className="about-page-section-2">
           <Row>
-            <Col lg={6} md={12}>
+            <Col lg={6} md={6} sm={12}>
               <div className="section-2-left-panel">
                 <h3>// ABOUT ASPEN TEK CONSULTANTS</h3>
                 <h1>IT CONSULTING SERVICES & SOLUTIONS</h1>
@@ -73,15 +77,15 @@ const AboutPage = () => {
                 </p>
               </div>
             </Col>
-            <Col lg={6} md={12}>
+            <Col lg={6} md={6} sm={12}>
               <div className="section-2-right-panel">
                 <Row className="right-panel-row1">
                   <div className="img1">Our Mission</div>
-                  <div className="img2">Our Mission</div>
+                  <div className="img3">Our Mission</div>
                 </Row>
                 <Row className="right-panel-row2">
-                  <div className="img1">Our Mission</div>
                   <div className="img2">Our Mission</div>
+                  <div className="img4">Our Mission</div>
                 </Row>
               </div>
             </Col>
@@ -94,7 +98,7 @@ const AboutPage = () => {
           <Row>
             <Col lg={7} md={12}>
               <div className="about-section-3-left-panel">
-                <img src={two} />
+                <img src={sec3Img} />
               </div>
             </Col>
             <Col lg={5} md={12}>
@@ -125,10 +129,10 @@ const AboutPage = () => {
                   high-quality, reliable IT experts and industry leaders for
                   each of our partnerships.
                 </p>
-                <p className="about-section-learn">
+                <a id="about-section-learn" href="/aboutUs">
                   <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                   LEARN MORE
-                </p>
+                </a>
               </div>
             </Col>
           </Row>
@@ -159,7 +163,7 @@ const AboutPage = () => {
             </Col>
             <Col lg={6} md={0}>
               <div className="about-section-4-right-panel">
-                <img src={two} />
+                <img src={sec4Img} />
               </div>
             </Col>
           </Row>
@@ -191,7 +195,6 @@ const AboutPage = () => {
                     ></i>
                     LEARN MORE
                   </Card.Link>
-                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
@@ -213,7 +216,6 @@ const AboutPage = () => {
                     ></i>
                     LEARN MORE
                   </Card.Link>
-                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
@@ -234,7 +236,6 @@ const AboutPage = () => {
                     ></i>
                     LEARN MORE
                   </Card.Link>
-                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
@@ -254,7 +255,6 @@ const AboutPage = () => {
                     ></i>
                     LEARN MORE
                   </Card.Link>
-                  {/* <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
@@ -310,7 +310,7 @@ const AboutPage = () => {
             </Col>
             <Col lg={6} md={0}>
               <div className="about-section-7-right-panel">
-                <img src={two} />
+                <img src={sec7Img} />
               </div>
             </Col>
           </Row>

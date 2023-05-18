@@ -46,34 +46,65 @@
 }
 
 .section-2-right-panel .img1 {
-    background-image: url("../Images/two.jpg");
-    height: 240px;
-    width: 190px;
-    padding: 18px;
+    background-image: url("../Images/about-1.jpg");
+    width: 352px;
     text-align: center;
     color: #ffffff;
     font-weight: 800;
     font-size: 30px;
-    padding-top: 20%;
+    padding: 20%;
     filter: grayscale(100%);
     margin: 20px;
+    background-repeat: no-repeat;
+}
+
+.section-2-right-panel .img3 {
+    background-image: url("../Images/about-3.jpg");
+    height: auto;
+    width: 352px;
+    margin: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20%;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
 }
 
 .section-2-right-panel .img2 {
-    background-image: url("../Images/two.jpg");
-    height: 240px;
-    width: 190px;
+    background-image: url("../Images/abou-2.jpg");
+    height: auto;
+    width: 352px;
     margin: 20px;
     text-align: center;
     color: #ffffff;
     font-weight: 800;
     font-size: 30px;
-    padding-top: 20%;
+    padding: 20%;
     filter: grayscale(100%);
+    background-repeat: no-repeat;
 }
 
+.section-2-right-panel .img4 {
+    background-image: url("../Images/about-4.jpg");
+    height: auto;
+    width: 352px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20%;
+    filter: grayscale(100%);
+    margin: 40px;
+    background-repeat: no-repeat;
+}
+
+
 .section-2-right-panel .img1:hover,
-.section-2-right-panel .img2:hover {
+.section-2-right-panel .img2:hover,
+.section-2-right-panel .img3:hover,
+.section-2-right-panel .img4:hover {
     filter: grayscale(0%);
     transition: 0.5s;
 }
@@ -97,37 +128,63 @@
     }
 }
 
-@media(max-width:902px) {
-    .section-2-right-panel .img1 {
+@media(max-width:992px) {
+    .section-2-right-panel {
         height: auto;
-        width: 300px;
+        width: 350px;
     }
 
-    .section-2-right-panel .img2 {
+    .section-2-right-panel .img1,
+    .section-2-right-panel .img2,
+    .section-2-right-panel .img3,
+    .section-2-right-panel .img4 {
         height: auto;
-        width: 300px;
+        width: 330px;
+        padding: 100px;
     }
 }
 
-@media (max-width:802px) {
-    .about-page-section-2 {
-        padding: 100px 20px;
-    }
-}
 
 @media (max-width:767px) {
-    .section-2-right-panel .img1 {
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        object-position: 25% 25%;
+
+    .section-2-right-panel .img1,
+    .section-2-right-panel .img3 {
+        width: 80%;
+        margin: 20px;
+
     }
 
-    .section-2-right-panel .img2 {
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
+    .section-2-right-panel .img2,
+    .section-2-right-panel .img4 {
+        width: 80%;
+        margin: 20px;
+    }
 
+    .section-2-right-panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+}
+
+@media (max-width:720px) {
+    .section-2-right-panel {
+        display: block;
+        width: 100%;
+        vertical-align: center;
+    }
+}
+
+@media (max-width:425px) {
+    .section-2-right-panel {
+        display: none;
     }
 }
 
@@ -208,10 +265,15 @@
     font-size: 30px;
 }
 
-.about-section-3-right-panel .about-section-learn {
+.about-section-3-right-panel a {
     color: #23BBB7;
     padding: 10px;
     animation: glitch 1s linear infinite;
+    text-decoration: none;
+}
+
+.about-section-3-right-panel a:hover {
+    color: #23BBB7;
 }
 
 @keyframes glitch {
@@ -284,6 +346,7 @@
 .about-section-4-right-panel img {
     height: auto;
     width: 100%;
+    padding-top: 20%
 }
 
 
@@ -471,12 +534,11 @@
 
 @media (max-width:991px) {
     .about-section-7-right-panel {
-        display: none;
-        width: 0px;
+        padding-top: 10%;
     }
 
-    .about-section-4-right-panel {
-        display: none;
+    .about-section-4-right-panel img {
+        padding-top: 5%;
     }
 }
 
@@ -517,5 +579,15 @@
 
     .about-page-section-4 p {
         font-size: 15px;
+    }
+}
+
+@media (max-width:425px) {
+    .about-section-4-right-panel {
+        display: none;
+    }
+
+    .about-section-7-right-panel {
+        display: none;
     }
 }
