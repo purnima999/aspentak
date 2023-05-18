@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import bgImg from "../../Images/two.jpg";
 import "../../Css/industryPage.css";
 
 const IndustryPage = () => {
+  
+  useEffect(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
   return (
     <>
       <div className="industry-page">

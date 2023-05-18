@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Css/contactPage.css";
 import { Row, Col, Card, Button } from "react-bootstrap";
 
@@ -8,6 +8,11 @@ const ContactPage = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
+
+  useEffect(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
   return (
     <>
       <div>

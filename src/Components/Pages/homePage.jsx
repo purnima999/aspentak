@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel, Button, Row, Col, Card } from "react-bootstrap";
 import two from "../../Images/two.jpg";
 import images from "../../Images/images.png";
@@ -8,6 +8,7 @@ import "font-awesome/css/font-awesome.min.css";
 import "../../Css/homePage.css";
 import team from "../../Images/team.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import hmPgaesec3 from "../../Images/homepage-sec2.png";
 
 const HomePage = () => {
   // back to top button
@@ -15,6 +16,11 @@ const HomePage = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
+
+  useEffect(()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  })
 
   return (
     <>
@@ -42,11 +48,20 @@ const HomePage = () => {
                 <h3 className="content-slide-in">
                   // Only High-Quality Services
                 </h3>
-                <h1>
+                {/* <h1>
                   IT CONSULTING
                   <br />
                   SERVICES & SOLUTIONS
-                </h1>
+                </h1> */}
+                <svg viewBox="0 0 1320 300">
+                  <text x="25%" y="20%" dy=".35em" text-anchor="middle">
+                    IT CONSULTING
+                  </text>
+                  <br />
+                  <text x="38%" y="50%" dy=".35em" text-anchor="middle">
+                    SERVICES & SOLUTIONS
+                  </text>
+                </svg>
                 <p>
                   We are 100+ professional software engineers with more than
                   <br />
@@ -81,11 +96,15 @@ const HomePage = () => {
               <img className="d-block w-100" src={two} alt="Third slide" />
               <div className="carousel-content">
                 <h3>// Only High-Quality Services</h3>
-                <h1>
-                  IT CONSILTING
+                <svg viewBox="0 0 1320 300">
+                  <text x="25%" y="20%" dy=".35em" text-anchor="middle">
+                    IT CONSULTING
+                  </text>
                   <br />
-                  SERVICES & SOLUTIONS
-                </h1>
+                  <text x="38%" y="50%" dy=".35em" text-anchor="middle">
+                    SERVICES & SOLUTIONS
+                  </text>
+                </svg>
                 <p>
                   We are 100+ professional software engineers with more than
                   <br />
@@ -169,7 +188,7 @@ const HomePage = () => {
             </Col>
             <Col lg={6} md={0}>
               <div className="section-3-right-panel">
-                <img src={two} />
+                <img src={hmPgaesec3} />
                 <p>
                   <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                   LEARN MORE ABOUT US

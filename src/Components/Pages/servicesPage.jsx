@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../Css/servicesPage.css";
-import { Button, Row, Col, Card } from "react-bootstrap";
 import two from "../../Images/two.jpg";
+import {
+  Button,
+  Row,
+  Col,
+  Modal,
+  Form,
+  ButtonGroup,
+  ToggleButton,
+} from "react-bootstrap";
+import mockData from "../../JsonData/profiles.json";
 
 const ServicesPage = () => {
   // back to top button
@@ -9,6 +18,19 @@ const ServicesPage = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [radioValue, setRadioValue] = useState("1");
+
+  useEffect(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+
   return (
     <>
       <div>
@@ -35,9 +57,7 @@ const ServicesPage = () => {
                   We Offer a Wide <br /> Variety of IT Services
                 </h1>
               </Col>
-              <Col lg={6} sm={12}>
-                <Button className="btn">ALL SERVICES</Button>
-              </Col>
+              <Col lg={6} sm={12}></Col>
             </Row>
             <Row className="section-5-grid">
               <Col id="section-5-col" lg={3}>
@@ -51,6 +71,17 @@ const ServicesPage = () => {
                     by finding the right resource taking into consideration
                     their CPH and Gender diversity.
                   </p>
+                  <Button
+                    style={{
+                      padding: "10px 20px",
+                      position: "absolute",
+                      right: 0,
+                      bottom: 0,
+                    }}
+                    onClick={() => handleShow()}
+                  >
+                    Know More
+                  </Button>
                 </div>
               </Col>
               <Col id="section-5-col" lg={3}>
@@ -64,6 +95,17 @@ const ServicesPage = () => {
                     shortest period and for flexible onboarding and offboarding
                     of resources.
                   </p>
+                  <Button
+                    style={{
+                      padding: "10px 20px",
+                      position: "absolute",
+                      right: 0,
+                      bottom: 0,
+                    }}
+                    onClick={() => handleShow()}
+                  >
+                    Know More
+                  </Button>
                 </div>
               </Col>
               <Col id="section-5-col" lg={3}>
@@ -77,6 +119,17 @@ const ServicesPage = () => {
                     maintaining all the matrix, CPH, Gender diversity, Source
                     mix, HTD with proper documentation.
                   </p>
+                  <Button
+                    style={{
+                      padding: "10px 20px",
+                      position: "absolute",
+                      right: 0,
+                      bottom: 0,
+                    }}
+                    onClick={() => handleShow()}
+                  >
+                    Know More
+                  </Button>
                 </div>
               </Col>
               <Col id="section-5-col" lg={3}>
@@ -90,6 +143,17 @@ const ServicesPage = () => {
                     conducting the preliminary rounds of evaluation/ Tests and
                     prepare for the final round of interview with client.
                   </p>
+                  <Button
+                    style={{
+                      padding: "10px 20px",
+                      position: "absolute",
+                      right: 0,
+                      bottom: 0,
+                    }}
+                    onClick={() => handleShow()}
+                  >
+                    Know More
+                  </Button>
                 </div>
               </Col>
             </Row>
@@ -187,6 +251,54 @@ const ServicesPage = () => {
           </div>
         </div> */}
         {/* ================================= service-page-section-5-end ========================= */}
+
+        {/* modal */}
+        <div className="applyForm" id="form">
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton></Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group className="mb-3" controlId="formGroupEmail">
+                  <Form.Control type="text" placeholder="Name" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formGroupPassword">
+                  <Form.Control
+                    type="Email Address"
+                    placeholder="Email Address"
+                  />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formGroupEmail">
+                  <Form.Control type="text" placeholder="Designation" />
+                </Form.Group>
+                <ButtonGroup>
+                  {mockData &&
+                    mockData?.contactTimings?.map((radio, idx) => (
+                      <ToggleButton
+                        key={idx}
+                        id={`radio-${idx}`}
+                        type="radio"
+                        variant={idx % 2 ? "outline-success" : "outline-danger"}
+                        name="radio"
+                        value={radio.value}
+                        checked={radioValue === radio.value}
+                        onChange={(e) => setRadioValue(e.currentTarget.value)}
+                      >
+                        {radio.name}
+                      </ToggleButton>
+                    ))}
+                </ButtonGroup>
+              </Form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+              <Button variant="primary" onClick={handleClose}>
+                submit
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </div>
       </div>
     </>
   );

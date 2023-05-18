@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Css/aboutPage.css";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import two from "../../Images/two.jpg";
@@ -9,6 +9,11 @@ const AboutPage = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
+
+  useEffect(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
   return (
     <>
       <div>

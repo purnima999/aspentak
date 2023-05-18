@@ -97,7 +97,9 @@
 .service-page-section-4 .btn:hover {
     background-color: #7141b1;
 }
-
+.service-page-section-2 p{
+    padding-bottom: 25px;
+}
 @media (max-width:786px) {
     .service-page-section-2 #title {
         font-size: 28px;
