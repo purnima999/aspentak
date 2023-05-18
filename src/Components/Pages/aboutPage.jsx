@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "../../Css/aboutPage.css";
 import { Row, Col, Card, Button } from "react-bootstrap";
-import two from "../../Images/two.jpg";
 import sec3Img from "../../Images/about-5.png";
 import sec4Img from "../../Images/about-6.png";
 import sec7Img from "../../Images/about-7.png";

@@ -12,6 +12,7 @@ import {
 } from "react-bootstrap";
 import mockData from "../../JsonData/profiles.json";
 
+
 const ServicesPage = () => {
   // back to top button
   const backToTopHandler = () => {

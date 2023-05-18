@@ -2,13 +2,11 @@ import React, { useEffect } from "react";
 import { Carousel, Button, Row, Col, Card } from "react-bootstrap";
 import two from "../../Images/two.jpg";
 import images from "../../Images/images.png";
-import client from "../../Images/client.png";
-import client5 from "../../Images/client5.png";
 import "font-awesome/css/font-awesome.min.css";
 import "../../Css/homePage.css";
-import team from "../../Images/team.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import hmPgaesec3 from "../../Images/homepage-sec2.png";
+
+
 
 const HomePage = () => {
   // back to top button
