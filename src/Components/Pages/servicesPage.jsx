@@ -11,6 +11,7 @@ import {
   ToggleButton,
 } from "react-bootstrap";
 import mockData from "../../JsonData/profiles.json";
+import hmPgaesec3 from "../../Images/homepage-sec2.png";
 
 
 const ServicesPage = () => {
@@ -51,7 +52,7 @@ const ServicesPage = () => {
         {/* ================================= service-page-section-2-start ==========================  */}
         <div className="service-page-section-2">
           <div className="home-page-section-5">
-            <h3>// OUR SERVICE</h3>
+            <h3>OUR SERVICE</h3>
             <Row>
               <Col lg={6} sm={12}>
                 <h1>
@@ -186,7 +187,7 @@ const ServicesPage = () => {
             </Col>
             <Col lg={6} md={0}>
               <div className="service-section-4-right-panel">
-                <img src={two} />
+                <img src={hmPgaesec3} />
               </div>
             </Col>
           </Row>
@@ -195,7 +196,7 @@ const ServicesPage = () => {
 
         {/* ================================= service-page-section-4-start ========================= */}
         <div className="service-page-section-4">
-          <h3>// Drop us a line! We are here to answer your questions 24/7</h3>
+          <h3>Drop us a line! We are here to answer your questions 24/7</h3>
           <h1>NEED A CONSULTATION?</h1>
           <Button className="btn">CONTACT US</Button>
         </div>
@@ -205,7 +206,7 @@ const ServicesPage = () => {
         {/* <div className="home-page-section-8">
           <div className="section-8-inner-box">
             <div className="section-8-inner-box-text">
-              <h3>// OUR CLIENTS</h3>
+              <h3>OUR CLIENTS</h3>
               <h1>
                 We are Trusted <br />
                 15+ Countries Worldwide

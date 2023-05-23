@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Carousel, Button, Row, Col, Card } from "react-bootstrap";
 import two from "../../Images/two.jpg";
-import images from "../../Images/images.png";
 import "font-awesome/css/font-awesome.min.css";
 import "../../Css/homePage.css";
 import hmPgaesec3 from "../../Images/homepage-sec2.png";
-
-
+import h1 from "../../Images/h1.jpg";
+import h2 from "../../Images/h2.jpg";
+import h3 from '../../Images/h3.jpg';
 
 const HomePage = () => {
   // back to top button
@@ -15,10 +15,10 @@ const HomePage = () => {
     document.documentElement.scrollTop = 0;
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  })
+  });
 
   return (
     <>
@@ -39,13 +39,11 @@ const HomePage = () => {
               <img
                 className="d-block w-100"
                 id="img"
-                src={two}
+                src={h1}
                 alt="first slide"
               />
               <div className="carousel-content">
-                <h3 className="content-slide-in">
-                  // Only High-Quality Services
-                </h3>
+                <h3 className="content-slide-in">Only High-Quality Services</h3>
                 {/* <h1>
                   IT CONSULTING
                   <br />
@@ -72,11 +70,11 @@ const HomePage = () => {
               <img
                 className="d-block w-100"
                 id="img"
-                src={images}
+                src={h2}
                 alt="Second slide"
               />
               <div className="carousel-content">
-                <h3>// Only High-Quality Services</h3>
+                <h3>Only High-Quality Services</h3>
                 <h1>
                   IT CONSILTING
                   <br />
@@ -91,9 +89,9 @@ const HomePage = () => {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={two} alt="Third slide" />
+              <img className="d-block w-100" src={h3} alt="Third slide" />
               <div className="carousel-content">
-                <h3>// Only High-Quality Services</h3>
+                <h3>Only High-Quality Services</h3>
                 <svg viewBox="0 0 1320 300">
                   <text x="25%" y="20%" dy=".35em" text-anchor="middle">
                     IT CONSULTING
@@ -151,7 +149,7 @@ const HomePage = () => {
         <div className="home-page-section-3">
           <Row>
             <Col>
-              <h3>// ABOUT COMPANY</h3>
+              <h3> ABOUT COMPANY</h3>
               <h1>
                 Your Partner for
                 <br />
@@ -199,7 +197,7 @@ const HomePage = () => {
 
         {/* ==================================================section4-start================================ */}
         <div className="home-page-section-4">
-          <h3>// WHAT WE OFFER</h3>
+          <h3> WHAT WE OFFER</h3>
           <h1>
             Design the Concept <br />
             of your Bussiness Idea Now
@@ -308,7 +306,7 @@ const HomePage = () => {
 
         {/* ==================================================section-5-start ============================= */}
         <div className="home-page-section-5">
-          <h3>// OUR SERVICE</h3>
+          <h3>OUR SERVICE</h3>
           <Row>
             <Col lg={6} sm={12}>
               <h1>
@@ -381,7 +379,7 @@ const HomePage = () => {
           <Col className="section-6-image-col">
             <img src={two} />
             <div className="section-6-content">
-              <h3>// We Carry More Than Just Good IT Service Skills</h3>
+              <h3> We Carry More Than Just Good IT Service Skills</h3>
               <h1>Let's Build Your Business!</h1>
               <Button className="btn">CONTACT US</Button>
             </div>
@@ -394,7 +392,7 @@ const HomePage = () => {
           <Col id="section-7-outer-col">
             <img src={two} />
             <div className="section-7-content">
-              <h3>// IT CONSULTING SERVICES & SOLUTIONS</h3>
+              <h3>IT CONSULTING SERVICES & SOLUTIONS</h3>
               <h1>
                 We Deliver Solution with <br />
                 the Goal of Trusting Relationships
@@ -434,7 +432,7 @@ const HomePage = () => {
         {/* <div className="home-page-section-8">
           <div className="section-8-inner-box">
             <div className="section-8-inner-box-text">
-              <h3>// OUR CLIENTS</h3>
+              <h3>OUR CLIENTS</h3>
               <h1>
                 We are Trusted <br />
                 15+ Countries Worldwide

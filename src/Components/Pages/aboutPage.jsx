@@ -40,7 +40,7 @@ const AboutPage = () => {
           <Row>
             <Col lg={6} md={6} sm={12}>
               <div className="section-2-left-panel">
-                <h3>// ABOUT ASPEN TEK CONSULTANTS</h3>
+                <h3> ABOUT ASPEN TEK CONSULTANTS</h3>
                 <h1>IT CONSULTING SERVICES & SOLUTIONS</h1>
                 <p>
                   Aspentek Informatics Private Limited is a Professional
@@ -80,11 +80,11 @@ const AboutPage = () => {
               <div className="section-2-right-panel">
                 <Row className="right-panel-row1">
                   <div className="img1">Our Mission</div>
-                  <div className="img3">Our Mission</div>
+                  <div className="img3">Our Vision</div>
                 </Row>
                 <Row className="right-panel-row2">
-                  <div className="img2">Our Mission</div>
-                  <div className="img4">Our Mission</div>
+                  <div className="img2">Core Values</div>
+                  <div className="img4">Our Strategy</div>
                 </Row>
               </div>
             </Col>
@@ -102,7 +102,7 @@ const AboutPage = () => {
             </Col>
             <Col lg={5} md={12}>
               <div className="about-section-3-right-panel">
-                <h3>// OUR MISSION</h3>
+                <h3> OUR MISSION</h3>
                 <h1>About Aspen Tek Consultants</h1>
                 <Row className="about-section-3-grid" id="aboutgrid">
                   <Col className="about-section-3-col" lg={2} md={2} sm={2}>
@@ -142,7 +142,7 @@ const AboutPage = () => {
         <div className="about-page-section-4">
           <Row>
             <Col>
-              <h3>//OUR VISION</h3>
+              <h3>OUR VISION</h3>
               <h1>About Aspen Tek Consultants</h1>
               <p>
                 To grow our candidate pool into one of the most desirable IT
@@ -171,7 +171,7 @@ const AboutPage = () => {
 
         {/* =================================== about-page-section-5-start ================================== */}
         <div className="home-page-section-4">
-          <h3>// WHAT WE OFFER</h3>
+          <h3> WHAT WE OFFER</h3>
           <h1>
             Design the Concept <br />
             of your Bussiness Idea Now
@@ -292,7 +292,7 @@ const AboutPage = () => {
           <Row>
             <Col lg={6} md={12}>
               <div className="about-section-7-left-panel">
-                <h3>// IT STARTS WITH YOU</h3>
+                <h3> IT STARTS WITH YOU</h3>
                 <h1>
                   Improve and Innovate <br /> with the Tech Trends
                 </h1>

@@ -34,7 +34,7 @@ const ContactPage = () => {
           <Row>
             <Col lg={6} md={6} sm={12}>
               <div className="contact-page-section-2-left">
-                <h3>// CONTACT DETAILS</h3>
+                <h3>CONTACT DETAILS</h3>
                 <h1>Contact Our IT Consultant Team</h1>
                 <p>
                   Reach out today to begin your free initial consultation and
