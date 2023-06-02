@@ -55,7 +55,12 @@ const ContactPage = () => {
                       <div className="cardContent">
                         <h4>Our Address:</h4>
                         <p>
-                          1425 West Pioneer Drive, Suite 252 Irving, TX 75061
+                          India : 33-110/F/104, Officers Colony, R.K.Puram,
+                          Hyderabad, Telangana, India, 500056
+                        </p>
+                        <p>
+                          US : 1425 West Pioneer Drive, Suite 252 Irving, TX
+                          75061
                         </p>
                       </div>
                     </Col>
@@ -71,7 +76,8 @@ const ContactPage = () => {
                     <Col>
                       <div className="cardContent">
                         <h4>Our Mailbox:</h4>
-                        <p>info@aspenteksystems.com</p>
+                        <p>India : satya@aspentek.in</p>
+                        <p>US : info@aspenteksystems.com</p>
                       </div>
                     </Col>
                   </Row>
@@ -86,7 +92,8 @@ const ContactPage = () => {
                     <Col>
                       <div className="cardContent">
                         <h4>Our Phone:</h4>
-                        <p>972-275-9020</p>
+                        <p>+91-733-700-7734</p>
+                        <p>+1-972-275-9020</p>
                       </div>
                     </Col>
                   </Row>

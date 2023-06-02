@@ -4,7 +4,6 @@ import { Row, Col, Button } from "react-bootstrap";
 import logo from "../../Images/logo1.png";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   const openMenuHandler = () => {
     document.querySelector(".main-menu").classList.add("show");
@@ -24,7 +23,7 @@ const Header = () => {
       <div className="site-header-bottom">
         <div className="site-header-top">
           <Row>
-            <Col>
+            {/* <Col>
               <div className="site-header-top-left">
                 <ul className="header-items-left">
                   <li>
@@ -61,7 +60,7 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-            </Col>
+            </Col> */}
             <Col>
               <div className="site-header-top-right">
                 <ul className="header-items-right">
@@ -73,7 +72,7 @@ const Header = () => {
                           aria-hidden="true"
                         ></i>
                       </span>
-                      +91 1234567890
+                      +91733-700-7734
                     </a>
                   </li>
                   <li>
@@ -84,7 +83,7 @@ const Header = () => {
                           aria-hidden="true"
                         ></i>
                       </span>
-                      info@domain
+                      satya@aspentek.in
                     </a>
                   </li>
                 </ul>
@@ -123,13 +122,13 @@ const Header = () => {
                 <li>
                   <Link to="/contactUs">Contact</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/career">
                     <Button className="btn" type="button">
                       CAREER
                     </Button>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="main-menu-side-bar">

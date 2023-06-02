@@ -37,81 +37,104 @@
 #col10:hover,
 #col11:hover,
 #col12:hover {
-    /* transform: scale(1.5);
-    width: 200px;
-    height: 100px; */
+    filter: drop-shadow(5px 5px 5px #ffffff);
 }
 
 .industry-page #col1 {
     background-image: url("../Images/col1.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    /* filter: brightness(100%); */
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col2 {
     background-image: url("../Images/col2.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col3 {
     background-image: url("../Images/col3.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col4 {
     background-image: url("../Images/col4.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col5 {
     background-image: url("../Images/cp;5.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col6 {
     background-image: url("../Images/col6.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col7 {
     background-image: url("../Images/col7.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col8 {
     background-image: url("../Images/col8.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col9 {
     background-image: url("../Images/col9.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col10 {
     background-image: url("../Images/col10.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col11 {
     background-image: url("../Images/col11.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 .industry-page #col12 {
     background-image: url("../Images/col12.jpg");
     height: 200px;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 0 0 10px black;
 }
 
 

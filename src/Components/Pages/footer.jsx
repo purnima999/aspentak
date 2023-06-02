@@ -45,18 +45,18 @@ const Footer = () => {
                     India: 33-110/F/104, Officers Colony, R.K.Puram, Hyderabad,
                     Telangana, India, 500056
                     <br />
-                    1425 West Pioneer Drive, Suite 252 Irving, TX 75061
+                    US: 1425 West Pioneer Drive, Suite 252 Irving, TX 75061
                   </li>
 
                   <li>
                     Email:satya@aspentek.in
                     <br />
-                    nfo@aspenteksystems.com
+                    info@aspenteksystems.com
                   </li>
                   <li>
-                    Tel: 733-700-7734
+                    Tel: +91 733-700-7734
                     <br />
-                    Mobile: 72-275-9020
+                    Mobile:+1 972-275-9020
                   </li>
                 </ol>
               </Col>
