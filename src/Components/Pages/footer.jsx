@@ -63,7 +63,7 @@ const Footer = () => {
             </Row>
           </div>
           <div className="footer-copyright">
-            <p>© 2023 ASPEN TEK Systems. All rights reserved.</p>
+            <p>© 2023 ASPENTEK Informatics. All rights reserved.</p>
           </div>
         </div>
       </div>

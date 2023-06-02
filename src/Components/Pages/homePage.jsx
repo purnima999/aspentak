@@ -156,7 +156,7 @@ const HomePage = () => {
                 IT Consulting{" "}
               </h1>
               <p>
-                Aspen Tek Systems provides professional IT consulting candidate
+                AspenTek Informatics provides professional IT consulting candidate
                 services for businesses and organizations of any size. Our
                 expert team listens to your company’s unique challenges and
                 offers guidance and advice on staffing and recruiting options.
@@ -167,7 +167,7 @@ const HomePage = () => {
                   <h4>Experience</h4>
                   <hr />
                   <p>
-                    The team assembled at Aspen Tek Consultants offers years of
+                    The team assembled at AspenTek Informatics offers years of
                     experience troubleshooting.
                   </p>
                 </Col>

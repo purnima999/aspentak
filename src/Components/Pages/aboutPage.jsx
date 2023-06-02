@@ -40,7 +40,7 @@ const AboutPage = () => {
           <Row>
             <Col lg={6} md={6} sm={12}>
               <div className="section-2-left-panel">
-                <h3> ABOUT ASPEN TEK CONSULTANTS</h3>
+                <h3> ABOUT ASPENTEK INFORMATICS</h3>
                 <h1>IT CONSULTING SERVICES & SOLUTIONS</h1>
                 <p>
                   Aspentek Informatics Private Limited is a Professional
@@ -67,7 +67,7 @@ const AboutPage = () => {
                   contractor placement.
                 </p>
                 <p>
-                  Aspen Tek Co a range of valuable staffing skills. We work in
+                  AspenTek Informatics a range of valuable staffing skills. We work in
                   partnerships nsultants combines IT and business knowledge over
                   with our clients, advising them how to use and leverage their
                   hired staff to meet objectives and overcome problems. We are
@@ -103,7 +103,7 @@ const AboutPage = () => {
             <Col lg={5} md={12}>
               <div className="about-section-3-right-panel">
                 <h3> OUR MISSION</h3>
-                <h1>About Aspen Tek Consultants</h1>
+                <h1>About AspenTek Informatics</h1>
                 <Row className="about-section-3-grid" id="aboutgrid">
                   <Col className="about-section-3-col" lg={2} md={2} sm={2}>
                     <i
@@ -143,7 +143,7 @@ const AboutPage = () => {
           <Row>
             <Col>
               <h3>OUR VISION</h3>
-              <h1>About Aspen Tek Consultants</h1>
+              <h1>About AspenTek Informatics</h1>
               <p>
                 To grow our candidate pool into one of the most desirable IT
                 consulting staff and recruitment opportunities known worldwide,
@@ -154,7 +154,7 @@ const AboutPage = () => {
                 Reach out today through our contact page or email form to
                 schedule a free initial consultation about how we can best help
                 your company. We are eager to showcase our best candidates for
-                improving your business processes. Aspen Tek Consultants serve
+                improving your business processes. AspenTek Informatics serve
                 as technology partners you can trust. With our help, you’ll be
                 able to transform your systems with the best possible staff and
                 technicians available.
